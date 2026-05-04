@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Theme · 10-Color System</title>
+    <style>
+        /* -----------------------------------------
+           10 CORE COLOR VARIABLES (Purple Theme)
+           light + dark purple palette
+           ----------------------------------------- */
+        :root {
+            /* === 10 PURPLE COLORS (Light to Dark) === */
+            --purple-1: #F8F0FF;   /* lightest lavender (bg soft) */
+            --purple-2: #EADDFF;   /* very light purple */
+            --purple-3: #D7B9FF;   /* soft light purple */
+            --purple-4: #C49BFF;   /* medium-light purple */
+            --purple-5: #AE7AFF;   /* base light purple */
+            --purple-6: #8B5CF6;   /* main vivid purple (primary) */
+            --purple-7: #6D28D9;   /* deep purple */
+            --purple-8: #4C1D95;   /* darker rich purple */
+            --purple-9: #3B0764;   /* very dark purple */
+            --purple-10: #2A004F;  /* deepest dark purple */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+            background: #FCF9FF;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Color Palette display (team reference) */
+        .color-palette {
+            background: white;
+            border-radius: 28px;
+            padding: 1.8rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .palette-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .color-chip {
+            flex: 1;
+            min-width: 90px;
+            padding: 1rem 0.5rem;
+            text-align: center;
+            border-radius: 16px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transition: 0.1s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .chip-label {
+            display: block;
+            font-size: 0.7rem;
+            margin-top: 0.3rem;
+            font-weight: 500;
+            background: rgba(0,0,0,0.06);
+            border-radius: 20px;
+            padding: 0.1rem 0.3rem;
+        }
+
+        @media (max-width: 700px) {
+            body { padding: 1rem; }
+            .color-chip { min-width: 70px; }
+        }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <!-- COMPLETE 10-COLOR REFERENCE + MAPPING -->
+    <div class="color-palette">
+        <div class="palette-grid">
+            <div class="color-chip" style="background: var(--purple-1); color: #2d1a45;">--purple-1<div class="chip-label">#F8F0FF</div></div>
+            <div class="color-chip" style="background: var(--purple-2); color: #2d1a45;">--purple-2<div class="chip-label">#EADDFF</div></div>
+            <div class="color-chip" style="background: var(--purple-3); color: #2c1a45;">--purple-3<div class="chip-label">#D7B9FF</div></div>
+            <div class="color-chip" style="background: var(--purple-4); color: #1f0e38;">--purple-4<div class="chip-label">#C49BFF</div></div>
+            <div class="color-chip" style="background: var(--purple-5); color: white;">--purple-5<div class="chip-label">#AE7AFF</div></div>
+            <div class="color-chip" style="background: var(--purple-6); color: white;">--purple-6<div class="chip-label">#8B5CF6</div></div>
+            <div class="color-chip" style="background: var(--purple-7); color: white;">--purple-7<div class="chip-label">#6D28D9</div></div>
+            <div class="color-chip" style="background: var(--purple-8); color: white;">--purple-8<div class="chip-label">#4C1D95</div></div>
+            <div class="color-chip" style="background: var(--purple-9); color: #e9dcff;">--purple-9<div class="chip-label">#3B0764</div></div>
+            <div class="color-chip" style="background: var(--purple-10); color: #d9c8ff;">--purple-10<div class="chip-label">#2A004F</div></div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
