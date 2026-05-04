@@ -1,0 +1,14 @@
+
+:root {
+    /* === 10 PURPLE COLORS (Light to Dark) === */
+    --purple-1: #F8F0FF;   /* lightest lavender (bg soft) */
+    --purple-2: #EADDFF;   /* very light purple */
+    --purple-3: #D7B9FF;   /* soft light purple */
+    --purple-4: #C49BFF;   /* medium-light purple */
+    --purple-5: #AE7AFF;   /* base light purple */
+    --purple-6: #8B5CF6;   /* main vivid purple (primary) */
+    --purple-7: #6D28D9;   /* deep purple */
+    --purple-8: #4C1D95;   /* darker rich purple */
+    --purple-9: #3B0764;   /* very dark purple */
+    --purple-10: #2A004F;  /* deepest dark purple */
+}
