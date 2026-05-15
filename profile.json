@@ -1,0 +1,58 @@
+   {
+    "id":1,
+    "fullName":"jaky Nassar",
+    "bio":"......",
+    "profilePhoto":"/images/users/jakyPhoto",
+    "role":"frontEnd Developer",
+    "contact":{
+        "email":"jaky@gmail.com",
+        "location":"Syria/Hama"
+    },
+    "social":{
+        "github":"https://github.com/jakyNassar",
+        "facebook":"jaky...",
+        "linkedIn":"https://linkedin.com/jaky"
+        
+    },
+    "projects":[
+        {
+            "id":1,
+            "title":"first project",
+            "desc":"kkkkkkkk",
+            "volunteers":" ... ... ... ",
+            "status":" pending , doing , done", 
+            "start_date":"",
+            "end_date":"",
+            "projectImage":"/images/project1Image",
+            "gh-pages":"https://github.io//project1"
+        },
+         {
+            "id":2,
+            "title":"second project",
+            "desc":"kkkkkkkk",
+            "volunteers":" ... ... ... ",
+            "start_date":"2026-05-10",
+            "end_date":"",
+            "projectImage":"/images/project2Image",
+            "gh-pages":"https://github.io//project2"
+        }
+    ],
+    "articles":[
+        {
+            "id":1,
+            "volunteerName":"jaky",
+            "title":"article1",
+            "content":"kkkkkkkk",
+            "article1Image":"/images/article1Image",
+            "start-published":"2026-05-10"
+        },
+        {
+            "id":2,
+            "volunteerName":"reem",
+            "title":"article2",
+            "content":"kkkkkkkk",
+            "article1Image":"/images/article2Image",
+            "start-published":"2026-06-10"  
+        }
+    ]
+   }
