@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins, sans-serif";
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #D7B9FF;
+    background-size: cover;
+    background-position: center;
+}
+.page-register{
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid black; 
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: black;
+    padding: 20px 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.page-register h2{
+    font-size: 36px;
+    text-align: center;
+}
+.page-register .input-register{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin: 15px 0;
+}
+ .input-register input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+ }
+  .input-register input::placeholder{
+    color: black;
+  }
+   .input-register i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+   }
+    .input-label{
+        position: absolute;
+        background-color: transparent;
+        right: 50px;
+        top: 16px;
+        border-radius: 40px;
+    }
+   .page-register .btn{
+    position: relative;
+    width: 100px;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+   font-size: 20px;
+    color: #3b0764;
+    font-weight: 600;
+   }
+   .page-register .register{
+    font-size: 15px;
+    text-align: center;
+    margin:  20px 0px 15px 20px ;
+   }
+   .register p {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 100px;
+    margin-top: -55px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+   }
+   /* .register p .a2 {
+    position: absolute;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 250px;
+    margin-bottom: 5px;
+   } */
+   .register p a:hover {
+    text-decoration: underline;
+   }
