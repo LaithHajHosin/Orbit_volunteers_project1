@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "logo": "",
+    "menu": [
+      "الرئيسية",
+      "المشاريع",
+      "المدونة",
+      "تواصل معنا",
+      "من نحن",
+      "فريقنا"
+    ],
+    "actions": {
+      "login": {
+        "email": "user@mail.com",
+        "password": "123"
+      },
+      "register": {
+        "firstName": "",
+        "lastName": "",
+        "email": "",
+        "phone": "",
+        "specialty": "",
+        "skills": "",
+
+        "password": "",
+        "confirmPassword": ""
+      },
+      "lang": ["ar", "en"]
+    }
+  },
+
+  "projects": [
+    {
+      "id": "p001",
+      "projectImage": "...",
+      "title": "....",
+      "desc": "...",
+      "full_desc": "...",
+      "start_date": "2026-01-10",
+      "expected_end": "..",
+
+      "status": "قيد التحضير / منجز / يحتاج متطوعين",
+      "type": "web",
+      "volunteers": [
+        {
+          "user_id": "v10",
+          "image_url": "https://api.example.com/images/p001.jpg"
+        },
+        {
+          "user_id": "v11",
+          "image_url": "https://api.example.com/images/p001.jpg"
+        }
+      ],
+      "gh-pages": "https://example.com/projects/p001"
+    }
+  ],
+
+  "posts": [
+    {
+      "id": "post001",
+      "author": {
+        "author_id": "user_",
+        "name": "",
+        "specialty": "",
+        "profile_image": "https://api.example.com/profiles/ahmad.jpg"
+      },
+      "title": "....",
+      "description": "...",
+      "date": "2024-06-01"
+    }
+  ],
+
+  "ourTeam": [
+    {
+      "id": "v101",
+      "full_name": "",
+      "specialty": "Computer Technology",
+      "image": "images/profiles/ahmad.jpg",
+      "bio": "",
+
+      "social_links": {
+        "linkedin": "https://linkedin.com/in/ahmad",
+        "github": "https://github.com/ahmad",
+        "facebook": "https://facebook.com/ahmad"
+      }
+    },
+    {
+      "id": "v102",
+      "full_name": "",
+      "specialty": "Computer Technology",
+      "image": "images/profiles/ahmad.jpg",
+      "bio": "",
+
+      "social_links": {
+        "linkedin": "https://linkedin.com/in/ahmad",
+        "github": "https://github.com/ahmad",
+        "facebook": "https://facebook.com/ahmad"
+      }
+    }
+  ],
+  "footer": {
+    "callUs": [
+      {
+        "title": "",
+        "info": ""
+      },
+      {
+        "title": "",
+        "info": ""
+      },
+      {
+        "title": "",
+        "info": ""
+      }
+    ],
+    "links??": ["", "", "?"],
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/ahmad",
+      "github": "https://github.com/ahmad",
+      "facebook": "https://facebook.com/ahmad",
+      "instagram": "https://instagram.com/ahmad",
+      "site": "https://site.com/ahmad"
+    }
+  }
+}

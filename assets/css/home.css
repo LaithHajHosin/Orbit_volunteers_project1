@@ -1,0 +1,167 @@
+/* hero */
+.hero {
+  width: 100%;
+  height: 608px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.hero-img-container {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+}
+.hero-text {
+  position: absolute;
+  left: 67%;
+  top: 49%;
+  display: flex;
+  gap: 19px;
+  font-size: 29px;
+  color: var(--purple-1);
+}
+.hero-actions {
+  position: absolute;
+  top: 60%;
+  right: 11%;
+}
+.hero-actions button {
+  width: 55%;
+  padding: 15px;
+  font-size: 19px;
+}
+/* /////////// */
+
+/* projects */
+
+.section-title {
+  text-align: center;
+  color: var(--purple-1);
+  margin-bottom: 75px;
+  margin-top: 68px;
+}
+.projects-container,
+.team-container,
+.about-us-container {
+  padding: 20px;
+  flex-wrap: wrap;
+  margin: 46px 0;
+}
+.project-card,
+.team-card {
+  direction: rtl;
+  width: 31%;
+  height: max-content;
+  border-radius: 5px;
+  background-color: var(--purple-10);
+  box-shadow: 0px 0px 3px -1px var(--purple-9);
+  color: var(--purple-3);
+}
+.card-container-img {
+  width: 100%;
+  height: 300px;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.card-title,
+.card-description,
+.card-details {
+  margin: 18px;
+}
+.card-details {
+  display: flex;
+  justify-content: right;
+  gap: 40px;
+}
+.card-cta {
+  text-align: center;
+  margin: 17px 0;
+}
+.card-cta .home-bottons {
+  width: 95%;
+}
+.all-projects {
+  text-align: center;
+  margin: 20px;
+}
+.all-projects .home-bottons {
+  width: 19%;
+  padding: 16px;
+}
+
+/* blogs */
+
+/* /////////// */
+/* about us */
+.about-us-card {
+  width: 21%;
+  background-color: var(--purple-10);
+  box-shadow: 0px 0px 3px -1px var(--purple-9);
+  padding: 22px;
+  text-align: center;
+  color: var(--purple-3);
+}
+.about-us-disc {
+  margin-bottom: 10px;
+}
+.about-us-disc .cta-text-icon {
+  color: var(--purple-1);
+}
+
+/* //////// */
+/* our team */
+
+.our-team .card-details {
+  gap: 0;
+  margin-top: 5px;
+  justify-content: space-evenly;
+}
+.our-team .card-details a {
+  color: var(--purple-3);
+}
+.our-team .card-details a:hover {
+  color: var(--purple-5);
+}
+.our-team .card-details .cta-text-icon {
+  font-size: 20px;
+}
+/* /////////// */
+
+/* join now */
+
+.join-now {
+  padding: 51px 30px;
+  height: max-content;
+  background-color: var(--purple-10);
+  margin-top: 33px;
+  text-align: center;
+}
+.join-title {
+  color: var(--purple-1);
+  font-size: 39px;
+  margin-bottom: 51px;
+}
+.join-actions {
+  width: 100%;
+  margin: 76px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.join-actions .home-bottons {
+  width: 18%;
+  padding: 22px;
+  background-color: var(--purple-9);
+  color: var(--purple-1);
+  font-size: 27px;
+}
+.join-actions .home-bottons:hover {
+  background-color: var(--purple-8);
+}
