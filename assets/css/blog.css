@@ -15,6 +15,7 @@
   position: relative;
   margin-bottom: 3rem;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .section-title {
@@ -144,24 +145,6 @@ nav.fcb {
   gap: 20px;
 }
 
-.home-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: auto;
-  flex-wrap: nowrap;
-}
-
-.home-bottons {
-  width: auto;
-  padding: 10px 14px;
-  white-space: nowrap;
-}
-
-.home-menu {
-  width: auto;
-  gap: 24px;
-}
 .read-more-btn {
   margin-top: 1rem;
   display: inline-block;
