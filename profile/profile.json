@@ -1,0 +1,197 @@
+   {
+    "id":1,
+    "name":"jaky Nassar",
+    "bio":"lorem...........",
+    "profilePhoto":"/images/users/jakyPhoto.png",
+    "role":"frontEnd Developer",
+    "contact":{
+        "email":"jaky@gmail.com",
+        "location":"Syria/Hama"
+    },
+    "social":{
+        "github":"https://github.com/jakyNassar",
+        "facebook":"jaky...",
+        "linkedIn":"https://linkedin.com/jaky"
+        
+    },
+  "skills":[
+        {
+            "id":1,
+            "name":"html",
+            "level":"advanced"
+        },
+        {
+            "id":2,
+            "name":"css",
+            "level":"advanced"
+        },
+        {
+            "id":3,
+            "name":"javascript",
+            "level":"advanced"
+        },
+        {
+            "id":4,
+            "name":"react",
+            "level":"intermediate"
+        }
+    ],
+    
+    "projects":[
+        {
+            "id":1,
+            "title":"first project",
+             "slug":"first-project",
+            "desc":"kkkkkkkk",
+             "details":
+                {
+                    "fullDescription":"hhhhh",
+                    "gallery":[
+                        "/images/project1Image1.png",
+                        "/images/project1Image2.png",
+                        "/images/project1Image3.png"
+                    ],
+                    "github":"https://github.com/project1",
+                    "features":[
+                        "feature1",
+                        "feature2",
+                        "feature3"
+
+                    ],
+                    "challenges":[
+                        "challenge1",
+                        "challenge2",
+                        "challenge3"
+                        ],
+                     "volunteers":[
+                    {
+                    "id":1,
+                    "name":"jaky",
+                    "volunteerImage":"/volunteers/jakyPhoto.png",
+                    "roleVolunteer":"frontEnd developer",
+                    "github":"https://github.com/jakyNassar",
+                 "volunteerProfile":"https://volunteerProfile.com/reem"
+
+                  },
+                  {
+                    "id":2,
+                    "name":"reem",
+                    "volunteerImage":"/volunteers/reemPhoto.png",
+                    "roleVolunteer":"frontEnd developer",
+                    "github":"https://github.com/jakyNassar",
+                   "volunteerProfile":"https://volunteerProfile.com/reem"
+
+                }
+            ]
+                },
+               
+             
+              "status":"doing",
+            "technologies":["HTML","CSS","JavaScript"],
+            "start_date":"2026-05-10",
+            "end_date":"",
+            "projectImage":"/images/project1Image.png",
+            "liveDemo":"https://github.io/project1"
+        },
+         {
+            "id":2,
+            "title":"second project",
+             "slug":"second-project",
+            "desc":"kkkkkkkk",
+             "details":
+                {
+                    "fullDescription":"hhhhh",
+                    "gallery":[
+                        "/images/project1Image1.png",
+                        "/images/project1Image2.png",
+                        "/images/project1Image3.png"
+                    ],
+                    "github":"https://github.com/project1",
+                    "features":[
+                        "feature1",
+                        "feature2",
+                        "feature3"
+
+                    ],
+                    "challenges":[
+                        "challenge1",
+                        "challenge2",
+                        "challenge3"
+                        ],
+                  "volunteers":[
+                   {
+                    "id":1,
+                    "name":"jaky",
+                    "volunteerImage":"/volunteers/jakyPhoto.png",
+                    "roleVolunteer":"frontEnd developer",
+                    "github":"https://github.com/jakyNassar",
+                  "volunteerProfile":"https://volunteerProfile.com/jaky"
+
+                },
+                {
+                    "id":2,
+                    "name":"reem",
+                    "volunteerImage":"/volunteers/reemPhoto.png",
+                    "roleVolunteer":"frontEnd developer",
+                    "github":"https://github.com/jakyNassar",
+                    "volunteerProfile":"https://volunteerProfile.com/reem"
+                }
+            ]
+                },
+               
+            "start_date":"2026-05-10",
+            "end_date":"",
+            "projectImage":"/images/project2Image.png",
+            "liveDemo":"https://github.io/project2"
+        }
+    ],
+    "articles":[
+        {
+            "id":1,
+            "author":[
+               {
+                "id":1,
+              "name":"jaky",
+               "authorImage":"/volunteers/jakyPhoto.png",
+               "role":"frontEnd developer",
+              "authorProfile":"https://volunteerProfile.com/reem"
+
+               },
+               {
+                "id":2,
+                 "name":"jaky",
+                "authorImage":"/volunteers/jakyPhoto.png",
+               "role":"frontEnd developer",
+               "authorProfile":"https://volunteerProfile.com/jaky"
+               }
+            ],
+            "title":"article1",
+            "content":"kkkkkkkk",
+            "articleImage":"/images/article1Image.png",
+            "published_at":"2026-05-10"
+        },
+        {
+            "id":2,
+            "author":[
+               {
+                "id":1,
+              "name":"jaky",
+               "authorImage":"/volunteers/jakyPhoto.png",
+               "role":"frontEnd developer",
+               "authorProfile":"https://volunteerProfile.com/jaky"
+               },
+               {
+                "id":2,
+                 "name":"jaky",
+                "authorImage":"/volunteers/jakyPhoto.png",
+               "role":"frontEnd developer",
+               "authorProfile":"https://volunteerProfile.com/jaky"
+               }
+            ],
+            "title":"article1",
+            "content":"kkkkkkkk",
+            "articleImage":"/images/article1Image.png",
+            "published_at":"2026-05-10"
+        }
+    ]
+   }
