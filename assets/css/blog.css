@@ -1,4 +1,5 @@
 
+
 .articles-section {
   padding: 4rem 0;
   background: var(--purple-1);
@@ -160,4 +161,21 @@ nav.fcb {
 .home-menu {
   width: auto;
   gap: 24px;
+}
+.read-more-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  background: var(--purple-8);
+  align-self: center;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s;
+  width: fit-content;
+}
+
+.read-more-btn:hover {
+  background: var(--purple-10);
+  transform: translateY(-2px);
 }
