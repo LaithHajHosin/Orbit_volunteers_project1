@@ -1,7 +1,8 @@
+
 .articles-section {
   padding: 4rem 0;
   background: var(--purple-1);
-  margin-top: 78px;
+    margin-top: 78px;
 }
 
 .container {
@@ -52,9 +53,7 @@
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s;
+  transition: transform 0.25s ease, box-shadow 0.25s;
   display: flex;
   flex-direction: column;
 }
@@ -149,11 +148,10 @@ nav.fcb {
   display: flex;
   align-items: center;
   gap: 8px;
-  width: auto;
   flex-wrap: nowrap;
 }
 
-.home-bottons {
+/* .home-bottons {
   width: auto;
   padding: 10px 14px;
   white-space: nowrap;
@@ -162,4 +160,4 @@ nav.fcb {
 .home-menu {
   width: auto;
   gap: 24px;
-}
+} */
