@@ -17,11 +17,16 @@
       "register": {
         "firstName": "",
         "lastName": "",
+        "userName": "",
         "email": "",
+        "bio": "",
+        "study": "",
+        "jobSkills": "",
         "phone": "",
         "specialty": "",
-        "skills": "",
-
+        "softSkills": "",
+        "languages": "",
+        "offerTime": "",
         "password": "",
         "confirmPassword": ""
       },
@@ -29,31 +34,74 @@
     }
   },
 
+
+
+
+  "hero": {
+    "title": "",
+    "heroImage": ""
+  },
+
+
+
+
+  "aboutUs": [
+    { "icon": "", "title": "", "desc": "" },
+    { "icon": "", "title": "", "desc": "" },
+    { "icon": "", "title": "", "desc": "" },
+    { "icon": "", "title": "", "desc": "" }
+  ],
+
+
+
+
+
   "projects": [
     {
       "id": "p001",
-      "projectImage": "...",
+      "mainImage": "...",
       "title": "....",
       "desc": "...",
-      "full_desc": "...",
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
       "start_date": "2026-01-10",
       "expected_end": "..",
-
+      "albumPhotos": ["", " ", ""],
+      "albumVideos": ["", " ", ""],
       "status": "قيد التحضير / منجز / يحتاج متطوعين",
-      "type": "web",
+      "views": "",
+      "catigory": "web",
       "volunteers": [
         {
-          "user_id": "v10",
-          "image_url": "https://api.example.com/images/p001.jpg"
+          "id": "v10",
+          "profilePhoto": "https://api.example.com/images/p001.jpg"
         },
         {
-          "user_id": "v11",
-          "image_url": "https://api.example.com/images/p001.jpg"
+          "id": "v11",
+          "profilePhoto": "https://api.example.com/images/p001.jpg"
         }
       ],
-      "gh-pages": "https://example.com/projects/p001"
+      "comments": [
+        {
+          "userName": "",
+          "content": ""
+        },
+        {
+          "userName": "",
+          "content": ""
+        }
+      ],
+      "link": "https://example.com/projects/p001"
     }
   ],
+
+
+
+
 
   "posts": [
     {
@@ -64,18 +112,45 @@
         "specialty": "",
         "profile_image": "https://api.example.com/profiles/ahmad.jpg"
       },
+      "mainImage": "...",
       "title": "....",
       "description": "...",
-      "date": "2024-06-01"
+      "date": "2024-06-01",
+      "readingTime": { "icon": "", "time": "" },
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "albumPhotos": ["", " ", ""],
+      "albumVideos": ["", " ", ""],
+      "status": "قيد التحضير / منجز / يحتاج متطوعين",
+      "views": "",
+      "catigory": "web",
+      "comments": [
+        {
+          "userName": "",
+          "content": ""
+        },
+        {
+          "userName": "",
+          "content": ""
+        }
+      ]
     }
   ],
+
+
+
+
 
   "ourTeam": [
     {
       "id": "v101",
-      "full_name": "",
-      "specialty": "Computer Technology",
-      "image": "images/profiles/ahmad.jpg",
+      "userName": "",
+      "role": "Computer Technology",
+      "profilePhoto": "images/profiles/ahmad.jpg",
       "bio": "",
 
       "social_links": {
@@ -86,9 +161,9 @@
     },
     {
       "id": "v102",
-      "full_name": "",
-      "specialty": "Computer Technology",
-      "image": "images/profiles/ahmad.jpg",
+      "userName": "",
+      "role": "Computer Technology",
+      "profilePhoto": "images/profiles/ahmad.jpg",
       "bio": "",
 
       "social_links": {
@@ -98,28 +173,67 @@
       }
     }
   ],
+
+
+
+
+
   "footer": {
     "callUs": [
       {
         "title": "",
-        "info": ""
+        "info": "",
+        "icon": ""
       },
       {
         "title": "",
-        "info": ""
+        "info": "",
+        "icon": ""
       },
       {
         "title": "",
-        "info": ""
+        "info": "",
+        "icon": ""
       }
     ],
-    "links??": ["", "", "?"],
-    "socialLinks": {
-      "linkedin": "https://linkedin.com/in/ahmad",
-      "github": "https://github.com/ahmad",
-      "facebook": "https://facebook.com/ahmad",
-      "instagram": "https://instagram.com/ahmad",
-      "site": "https://site.com/ahmad"
+    "socialLinks": [
+      {
+        "icon": "",
+        "github": ""
+      },
+      {
+        "icon": "",
+        "linkedin": ""
+      },
+      {
+        "icon": "",
+        "instagram": ""
+      },
+      {
+        "icon": "",
+        "site": ""
+      },
+      {
+        "icon": "",
+        "facebook": ""
+      }
+    ],
+
+
+
+    
+    "contactUs": {
+      "userName": "",
+      "email": "",
+      "contentMessage": ""
     }
+  },
+
+
+
+  "writeComment": {
+    "userName": "",
+    "email": "",
+    "contentMessage": ""
   }
 }
