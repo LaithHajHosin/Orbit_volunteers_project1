@@ -1,12 +1,14 @@
    {
     "id":1,
-    "name":"jaky Nassar",
-    "bio":"lorem...........",
-    "profilePhoto":"/images/users/jakyPhoto.png",
-    "role":"frontEnd Developer",
+    "name":"جاكي نصار ",
+    "userName":"جاكي",
+    "bio":"ااااااااااااااانننننننننننننننننننننن.",
+    "mainImage":"../assets/images/profilePic.png",
+       "alert":"image is not found",
+    "role":"مطور واجهات أمامية",
     "contact":{
         "email":"jaky@gmail.com",
-        "location":"Syria/Hama"
+        "location":"سوريا/حماه"
     },
     "social":{
         "github":"https://github.com/jakyNassar",
@@ -14,6 +16,23 @@
         "linkedIn":"https://linkedin.com/jaky"
         
     },
+    // إحصائيات
+    "statistics":[
+        {
+          "id":1,
+          "name":"سنوات الخبرة",
+          "icon":"",
+          "count":""
+
+        },
+        {
+          "id":2,
+          "name":" مشروع مكتمل",
+          "icon":"",
+          "count":""
+
+        }
+    ],
   "skills":[
         {
             "id":1,
@@ -36,112 +55,205 @@
             "level":"intermediate"
         }
     ],
+
     
     "projects":[
         {
             "id":1,
-            "title":"first project",
-             "slug":"first-project",
-            "desc":"kkkkkkkk",
-             "details":
+            "title":"المشروع الأول",
+           
+            "desc":"مممممممممممممممممم",
+            "viewCount":10,
+            "likeCount":20,
+            "details_url":"",
+            "comments":[
                 {
-                    "fullDescription":"hhhhh",
-                    "gallery":[
-                        "/images/project1Image1.png",
-                        "/images/project1Image2.png",
-                        "/images/project1Image3.png"
-                    ],
-                    "github":"https://github.com/project1",
-                    "features":[
-                        "feature1",
-                        "feature2",
-                        "feature3"
-
-                    ],
-                    "challenges":[
-                        "challenge1",
-                        "challenge2",
-                        "challenge3"
-                        ],
-                     "volunteers":[
-                    {
                     "id":1,
-                    "name":"jaky",
-                    "volunteerImage":"/volunteers/jakyPhoto.png",
-                    "roleVolunteer":"frontEnd developer",
-                    "github":"https://github.com/jakyNassar",
-                 "volunteerProfile":"https://volunteerProfile.com/reem"
-
-                  },
-                  {
-                    "id":2,
-                    "name":"reem",
-                    "volunteerImage":"/volunteers/reemPhoto.png",
-                    "roleVolunteer":"frontEnd developer",
-                    "github":"https://github.com/jakyNassar",
-                   "volunteerProfile":"https://volunteerProfile.com/reem"
-
+                    "name":"",
+                    "text":""
                 }
-            ]
-                },
+            ],
+            //  "details":
+            //     {
+            //         "fullDescription":"hhhhh",
+            //         "gallery":[
+            //            "../assets/images/profilePic.png",
+            //             "../assets/images/profilePic.png",
+            //             "../assets/images/profilePic.png"
+            //         ],
+            //         "github":"https://github.com/project1",
+            //         "features":[
+            //             "feature1",
+            //             "feature2",
+            //             "feature3"
+
+            //         ],
+            //         "challenges":[
+            //             "challenge1",
+            //             "challenge2",
+            //             "challenge3"
+            //             ],
+            //          "volunteers":[
+            //         {
+            //         "id":1,
+            //         "name":"jaky",
+            //         "image_url":"../assets/images/profilePic.png",
+            //         "alert":"image is not found",
+            //         "roleVolunteer":"frontEnd developer",
+            //         "github":"https://github.com/jakyNassar",
+            //      "volunteerProfile":"https://volunteerProfile.com/reem"
+
+            //       },
+            //       {
+            //         "id":2,
+            //         "name":"reem",
+            //         "image_url":"../assets/images/profilePic.png",
+            //         "alert":"image is not found",
+            //         "roleVolunteer":"frontEnd developer",
+            //         "github":"https://github.com/jakyNassar",
+            //        "volunteerProfile":"https://volunteerProfile.com/reem"
+
+            //     }
+            // ]
+            //     },
                
              
               "status":"doing",
+              "category":"web",
             "technologies":["HTML","CSS","JavaScript"],
             "start_date":"2026-05-10",
-            "end_date":"",
-            "projectImage":"/images/project1Image.png",
+            "end_date":"2026-06-20",
+            "mainImage":"../assets/images/test.jpg",
+               "alert":"image is not found",
             "liveDemo":"https://github.io/project1"
         },
          {
             "id":2,
-            "title":"second project",
+            "title":"المشروع الثاني",
              "slug":"second-project",
-            "desc":"kkkkkkkk",
-             "details":
+            "desc":"للللللللللللللللل",
+              "viewCount":10,
+            "likeCount":20,
+            "details_url":"",
+            "comments":[
                 {
-                    "fullDescription":"hhhhh",
-                    "gallery":[
-                        "/images/project1Image1.png",
-                        "/images/project1Image2.png",
-                        "/images/project1Image3.png"
-                    ],
-                    "github":"https://github.com/project1",
-                    "features":[
-                        "feature1",
-                        "feature2",
-                        "feature3"
-
-                    ],
-                    "challenges":[
-                        "challenge1",
-                        "challenge2",
-                        "challenge3"
-                        ],
-                  "volunteers":[
-                   {
                     "id":1,
-                    "name":"jaky",
-                    "volunteerImage":"/volunteers/jakyPhoto.png",
-                    "roleVolunteer":"frontEnd developer",
-                    "github":"https://github.com/jakyNassar",
-                  "volunteerProfile":"https://volunteerProfile.com/jaky"
-
-                },
-                {
-                    "id":2,
-                    "name":"reem",
-                    "volunteerImage":"/volunteers/reemPhoto.png",
-                    "roleVolunteer":"frontEnd developer",
-                    "github":"https://github.com/jakyNassar",
-                    "volunteerProfile":"https://volunteerProfile.com/reem"
+                    "name":"",
+                    "text":""
                 }
-            ]
-                },
-               
+            ],
+            //  "details":
+            //     {
+            //         "fullDescription":"hhhhh",
+            //         "gallery":[
+            //             "/images/project1Image1.png",
+            //             "../assets/images/profilePic.png",
+            //             "../assets/images/profilePic.png"
+            //         ],
+            //         "github":"https://github.com/project1",
+            //         "features":[
+            //             "feature1",
+            //             "feature2",
+            //             "feature3"
+
+            //         ],
+            //         "challenges":[
+            //             "challenge1",
+            //             "challenge2",
+            //             "challenge3"
+            //             ],
+            //       "volunteers":[
+            //        {
+            //         "id":1,
+            //         "name":"jaky",
+            //         "image_url":"../assets/images/profilePic.png",
+            //         "alert":"image is not found",
+            //         "roleVolunteer":"frontEnd developer",
+            //         "github":"https://github.com/jakyNassar",
+            //       "volunteerProfile":"https://volunteerProfile.com/jaky"
+
+            //     },
+            //     {
+            //         "id":2,
+            //         "name":"reem",
+            //         "image_url":"../assets/images/profile.png",
+            //         "alert":"image is not found",
+            //         "roleVolunteer":"frontEnd developer",
+            //         "github":"https://github.com/jakyNassar",
+            //         "volunteerProfile":"https://volunteerProfile.com/reem"
+            //     }
+            // ]
+            //     },
+               "category":"web",
+               "status":"doing",
             "start_date":"2026-05-10",
             "end_date":"",
-            "projectImage":"/images/project2Image.png",
+            "projectImage":"../assets/images/test.jpg",
+            "liveDemo":"https://github.io/project2"
+        },
+         {
+            "id":3,
+            "title":"المشروع التالت",
+             "slug":"second-project",
+            "desc":"ققققققققققققققق",
+              "viewCount":10,
+            "likeCount":20,
+            "details_url":"",
+            "comments":[
+                {
+                    "id":1,
+                    "name":"",
+                    "text":""
+                }
+            ],
+            //  "details":
+            //     {
+            //         "fullDescription":"hhhhh",
+            //         "gallery":[
+            //             "/images/project1Image1.png",
+            //             "../assets/images/profilePic.png",
+            //             "../assets/images/profilePic.png"
+            //         ],
+            //         "github":"https://github.com/project1",
+            //         "features":[
+            //             "feature1",
+            //             "feature2",
+            //             "feature3"
+
+            //         ],
+            //         "challenges":[
+            //             "challenge1",
+            //             "challenge2",
+            //             "challenge3"
+            //             ],
+            //       "volunteers":[
+            //        {
+            //         "id":1,
+            //         "name":"jaky",
+            //         "image_url":"../assets/images/profilePic.png",
+            //         "alert":"image is not found",
+            //         "roleVolunteer":"frontEnd developer",
+            //         "github":"https://github.com/jakyNassar",
+            //       "volunteerProfile":"https://volunteerProfile.com/jaky"
+
+            //     },
+            //     {
+            //         "id":2,
+            //         "name":"reem",
+            //         "image_url":"../assets/images/profile.png",
+            //         "alert":"image is not found",
+            //         "roleVolunteer":"frontEnd developer",
+            //         "github":"https://github.com/jakyNassar",
+            //         "volunteerProfile":"https://volunteerProfile.com/reem"
+            //     }
+            // ]
+            //     },
+                "category":"web",
+                "status":"done",
+            "start_date":"2026-05-10",
+            "end_date":"",
+            "mainImage":"../assets/images/test.jpg",
+               "alert":"image is not found",
             "liveDemo":"https://github.io/project2"
         }
     ],
@@ -152,7 +264,8 @@
                {
                 "id":1,
               "name":"jaky",
-               "authorImage":"/volunteers/jakyPhoto.png",
+               "image_url":"/volunteers/jakyPhoto.png",
+               "alert":"image is not found",
                "role":"frontEnd developer",
               "authorProfile":"https://volunteerProfile.com/reem"
 
@@ -160,14 +273,18 @@
                {
                 "id":2,
                  "name":"jaky",
-                "authorImage":"/volunteers/jakyPhoto.png",
+                "image_url":"/volunteers/jakyPhoto.png",
+                "alert":"image is not found",
                "role":"frontEnd developer",
                "authorProfile":"https://volunteerProfile.com/jaky"
                }
             ],
-            "title":"article1",
-            "content":"kkkkkkkk",
-            "articleImage":"/images/article1Image.png",
+            "details_url":"",
+            "category":"web",
+            "title":"مقالة1",
+            "content":"ضضضضض",
+            "mainImage":"../assets/images/article.jpeg",
+               "alert":"image is not found",
             "published_at":"2026-05-10"
         },
         {
@@ -176,7 +293,8 @@
                {
                 "id":1,
               "name":"jaky",
-               "authorImage":"/volunteers/jakyPhoto.png",
+               "image_url":"/volunteers/jakyPhoto.png",
+               "alert":"image is not found",
                "role":"frontEnd developer",
                "authorProfile":"https://volunteerProfile.com/jaky"
                },
@@ -188,9 +306,40 @@
                "authorProfile":"https://volunteerProfile.com/jaky"
                }
             ],
-            "title":"article1",
-            "content":"kkkkkkkk",
-            "articleImage":"/images/article1Image.png",
+            "details_url":"",
+            "title":"مقالة2",
+            "category":"mobile",
+            "content":"ثثثثث",
+            "mainImage":"../assets/images/article.jpeg",
+               "alert":"image is not found",
+            "published_at":"2026-05-10"
+        },
+         {
+            "id":2,
+            "author":[
+               {
+                "id":1,
+              "name":"jaky",
+               "image_url":"/volunteers/jakyPhoto.png",
+               "alert":"image is not found",
+               "role":"frontEnd developer",
+               "authorProfile":"https://volunteerProfile.com/jaky"
+               },
+               {
+                "id":2,
+                 "name":"jaky",
+                "image_url":"/volunteers/jakyPhoto.png",
+                "alert":"image is not found",
+               "role":"frontEnd developer",
+               "authorProfile":"https://volunteerProfile.com/jaky"
+               }
+            ],
+            "details_url":"",
+            "title":"مقالة3",
+            "category":"web",
+            "content":"غغغغغغغغغغ",
+            "mainImage":"../assets/images/article.jpeg",
+               "alert":"image is not found",
             "published_at":"2026-05-10"
         }
     ]

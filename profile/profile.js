@@ -42,14 +42,6 @@
      
     `
     document.getElementById("skills-container").innerHTML=`
-    <div id="skills"> 
-     ${data.skills.map(skill=>`
-      <div> 
-      <h3> ${skill.skillName} </h3>
-      </div>`).join("")}
-    </div>
-    `
-    document.getElementById("projects-container").innerHTML=`
     <div> 
        ${data.projects.map(project=>`
         <div id="project"> 
