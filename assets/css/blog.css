@@ -1,8 +1,8 @@
 
-
 .articles-section {
   padding: 4rem 0;
   background: var(--purple-1);
+    margin-top: 78px;
 }
 
 .container {
@@ -145,6 +145,7 @@ nav.fcb {
   gap: 20px;
 }
 
+<<<<<<< HEAD
 .read-more-btn {
   margin-top: 1rem;
   display: inline-block;
@@ -162,3 +163,22 @@ nav.fcb {
   background: var(--purple-10);
   transform: translateY(-2px);
 }
+=======
+.home-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+/* .home-bottons {
+  width: auto;
+  padding: 10px 14px;
+  white-space: nowrap;
+}
+
+.home-menu {
+  width: auto;
+  gap: 24px;
+} */
+>>>>>>> e53c2d88e43d301a6be5ededa082735a21123b63

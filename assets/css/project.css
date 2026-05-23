@@ -9,6 +9,7 @@ body{
 .projects-page{
     background: linear-gradient(135deg, #b784f7, #c79cff);
     padding: 40px;
+        margin-top: 78px;
 }
 
 /* container */

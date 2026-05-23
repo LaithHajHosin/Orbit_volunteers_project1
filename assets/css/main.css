@@ -70,6 +70,12 @@ nav {
   width: 20%;
   gap: 6px;
 }
+.home-actions a{
+  color: var(--purple-1);
+}
+ .all-projects .home-bottons  a{
+    color: var(--purple-1);
+ }
 .home-bottons {
   width: 34%;
   padding: 10px;
