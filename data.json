@@ -4,10 +4,11 @@
     "menu": [
       "الرئيسية",
       "المشاريع",
-      "المدونة",
+      "المقالات",
       "تواصل معنا",
       "من نحن",
-      "فريقنا"
+      "فريقنا",
+      "بروفايلي"
     ],
     "actions": {
       "login": {
@@ -39,7 +40,7 @@
 
   "hero": {
     "title": "",
-    "heroImage": ""
+    "heroImage": {"url" : "" , "alt" :""}
   },
 
 
@@ -59,7 +60,7 @@
   "projects": [
     {
       "id": "p001",
-      "mainImage": "...",
+      "mainImage": {"url" : "" , "alt" :""},
       "title": "....",
       "desc": "...",
       "full_desc": {
@@ -70,19 +71,19 @@
       },
       "start_date": "2026-01-10",
       "expected_end": "..",
-      "albumPhotos": ["", " ", ""],
-      "albumVideos": ["", " ", ""],
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
       "status": "قيد التحضير / منجز / يحتاج متطوعين",
       "views": "",
       "catigory": "web",
       "volunteers": [
         {
           "id": "v10",
-          "profilePhoto": "https://api.example.com/images/p001.jpg"
+          "profilePhoto": {"url" : "" , "alt" :""}
         },
         {
           "id": "v11",
-          "profilePhoto": "https://api.example.com/images/p001.jpg"
+          "profilePhoto": {"url" : "" , "alt" :""}
         }
       ],
       "comments": [
@@ -110,7 +111,7 @@
         "author_id": "user_",
         "name": "",
         "specialty": "",
-        "profile_image": "https://api.example.com/profiles/ahmad.jpg"
+        "profile_image": {"url" : "" , "alt" :""}
       },
       "mainImage": "...",
       "title": "....",
@@ -123,8 +124,8 @@
         "desc3": "",
         "desc4": ""
       },
-      "albumPhotos": ["", " ", ""],
-      "albumVideos": ["", " ", ""],
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
       "status": "قيد التحضير / منجز / يحتاج متطوعين",
       "views": "",
       "catigory": "web",
@@ -150,7 +151,7 @@
       "id": "v101",
       "userName": "",
       "role": "Computer Technology",
-      "profilePhoto": "images/profiles/ahmad.jpg",
+      "profilePhoto": {"url" : "images/profiles/ahmad.jpg" , "alt" :""},
       "bio": "",
 
       "social_links": {
@@ -163,7 +164,7 @@
       "id": "v102",
       "userName": "",
       "role": "Computer Technology",
-      "profilePhoto": "images/profiles/ahmad.jpg",
+      "profilePhoto": {"url" : "" , "alt" :""},
       "bio": "",
 
       "social_links": {

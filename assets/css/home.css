@@ -16,7 +16,7 @@
 }
 .hero-text {
   position: absolute;
-  left: 67%;
+  left: 62%;
   top: 49%;
   display: flex;
   gap: 19px;
@@ -49,11 +49,13 @@
   padding: 20px;
   flex-wrap: wrap;
   margin: 46px 0;
+  justify-content: center;
+  gap: 39px;
 }
 .project-card,
 .team-card {
   direction: rtl;
-  width: 31%;
+  width: 400px;
   height: max-content;
   border-radius: 5px;
   background-color: var(--purple-10);
@@ -100,7 +102,7 @@
 /* /////////// */
 /* about us */
 .about-us-card {
-  width: 21%;
+  width: 289px;
   background-color: var(--purple-10);
   box-shadow: 0px 0px 3px -1px var(--purple-9);
   padding: 22px;
@@ -164,4 +166,47 @@
 }
 .join-actions .home-bottons:hover {
   background-color: var(--purple-8);
+}
+
+@media (max-width: 1088px) {
+  .hero-text {
+    font-size: 23px;
+  }
+    .join-actions .home-bottons {
+    padding: 15px;
+    font-size: 20px;
+}
+}
+
+@media (max-width: 880px) {
+  .hero-text {
+    font-size: 18px;
+  }
+  .hero-actions button {
+    font-size: 15px;
+    padding: 10px;
+  }
+   .join-actions {
+  display: inline-grid;
+   }
+  .join-actions .home-bottons{
+        width: 100%;
+  }
+
+}
+
+@media (max-width: 680px) {
+  .hero-text {
+    left: 43%;
+    top: 59%;
+  }
+  .hero-actions {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .hero-text {
+    left: 35%;
+    top: 73%;
+  }
 }
