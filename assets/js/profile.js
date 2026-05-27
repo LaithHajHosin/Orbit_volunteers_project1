@@ -95,7 +95,7 @@ fetch("data.json")
                </div>
                 <img src="${post.mainImage}" alt="${post.title}" />
                 <div class="article_info">
-                  <h2>${post.catigory}</h2>
+                  <h2>${post.category}</h2>
                   <h1>${post.title}</h1>
                   <p>${post.description}</p>
                   <div id="author_info"> 
