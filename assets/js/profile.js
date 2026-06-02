@@ -1,4 +1,4 @@
-const selectedUserName = "جميل"; // غيّر هذا إلى اسم المستخدم المطلوب
+const selectedUserName = "جميل"; 
 fetch("data.json")
 .then(res=>res.json())
 .then(res=>{
