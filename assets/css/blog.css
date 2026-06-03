@@ -57,6 +57,7 @@
   transition: transform 0.25s ease, box-shadow 0.25s;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .article-card:hover {
@@ -161,4 +162,87 @@ nav.fcb {
 .read-more-btn:hover {
   background: var(--purple-10);
   transform: translateY(-2px);
+}
+
+.articles-section,
+.article-card,
+.card-content,
+.card-title,
+.card-meta,
+.read-more-btn,
+.card-description,
+.card-footer,
+.post-meta,
+.volunteer-info {
+  direction: rtl;
+  text-align: right;
+}
+
+.card-meta i,
+.post-meta i {
+  margin-left: 0;
+  margin-right: 0.3rem;
+}
+
+.card-description {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 0.8rem 0;
+  display: inline; 
+}
+
+.read-more-link {
+  display: inline;
+  color: var(--purple-8);
+  text-decoration: none;
+  font-weight: normal;
+  margin-right: 0.3rem;
+  white-space: nowrap; 
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+  color: var(--purple-6);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  direction: rtl;
+}
+
+.volunteer-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: #5b5b7a;
+}
+
+.volunteer-info i{
+  margin-left: 0;
+  margin-right: 0.3rem;
+  color: var(--purple-6);
+}
+
+.volunteer-info span {
+  color: var(--purple-8);
+  font-weight: 500;
+}
+.post-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: #5b5b7a; 
+}
+
+.post-meta i {
+  margin-left: 0;
+  margin-right: 0.3rem;
+  color: var(--purple-6);
 }

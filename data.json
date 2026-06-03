@@ -306,34 +306,116 @@
 
 
 
-  "ourTeam": [
+  "posts": [
     {
-      "id": "v101",
-      "usersName": ["جنى","احمد","جميل"],
-      "userName":"جميل",
-
-      "role": "Computer Technology",
-      "profilePhoto": {"url" : "./assets/images/profilePic.png" , "alt" :"here"},
-      "bio": " سلاؤتىثيهثيمصكزيوةةؤىثيتثيثتخحصسجحكجيى ؤىيىؤيتىتعثتيىؤتياثايلاؤيا لايتث",
-
-      "social_links": {
-        "linkedin": "https://linkedin.com/in/ahmad",
-        "github": "https://github.com/ahmad",
-        "facebook": "https://facebook.com/ahmad"
-      }
+      "id": "post001",
+      "author": {
+        "author_id": "user_",
+        "name": "مستخدم",
+        "specialty": " مهندس",
+        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
+      },
+      "mainImage": "./assets/images/test4.jpg",
+      "title": "مقالة1",
+      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
+      "date": "2024-06-01",
+      "readingTime": { "icon": "", "time": "" },
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"منجز",
+      "views": "20",
+      "catigory": "web",
+      "comments": [
+        {
+          "userName": "",
+          "content": ""
+        },
+        {
+          "userName": "",
+          "content": ""
+        }
+      ]
     },
-    {
-      "id": "v102",
-      "userName": "",
-      "role": "Computer Technology",
-      "profilePhoto": {"url" : "" , "alt" :""},
-      "bio": "",
+     {
+      "id": "post001",
+      "author": {
+        "author_id": "user_",
+               "name": "مستخدم",
+        "specialty": " مهندس",
+        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
 
-      "social_links": {
-        "linkedin": "https://linkedin.com/in/ahmad",
-        "github": "https://github.com/ahmad",
-        "facebook": "https://facebook.com/ahmad"
-      }
+      },
+      "mainImage": "./assets/images/test4.jpg",
+      "title": "مقالة1",
+      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
+      "date": "2024-06-01",
+      "readingTime": { "icon": "", "time": "" },
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"منجز",
+      "views": "20",
+      "catigory": "web",
+      "comments": [
+        {
+          "userName": "",
+          "content": ""
+        },
+        {
+          "userName": "",
+          "content": ""
+        }
+      ]
+    },
+     {
+      "id": "post001",
+      "author": {
+        "author_id": "user_",
+          "name": "مستخدم",
+        "specialty": " مهندس",
+        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
+
+      },
+      "mainImage": "./assets/images/test4.jpg",
+      "title": "مقالة1",
+      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
+        "date": "2024-06-01",
+      "readingTime": { "icon": "", "time": "" },
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"منجز",
+      "views": "20",
+      "catigory": "web",
+      "comments": [
+        {
+          "userName": "",
+          "content": ""
+        },
+        {
+          "userName": "",
+          "content": ""
+        }
+      ]
     }
   ],
 
