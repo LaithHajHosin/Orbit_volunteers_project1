@@ -109,9 +109,15 @@ body{
 .projects-grid{
     display: grid;
 
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(3, 400px);
 
-    gap: 25px;
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 40px;
+        margin-bottom: 80px;
+
 }
 
 /* card */
@@ -128,6 +134,8 @@ body{
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 
     transition: 0.3s;
+
+    width: 400px;
 }
 
 .project-card:hover{
@@ -204,4 +212,16 @@ body{
     background-color: #6920df;
 
     transform: translateY(-2px);
+}
+.card-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-details span{
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
