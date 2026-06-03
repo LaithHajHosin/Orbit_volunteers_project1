@@ -22,10 +22,10 @@
         "email": "",
         "bio": "",
         "study": "",
-        "jobSkills": "",
+        "jobSkills": " العمل ضمن فريق , القدرة على التعلم الذاتي , مهارات التواصل",
         "phone": "",
         "specialty": "",
-        "softSkills": "",
+        "softSkills": " العمل ضمن فريق , القدرة على التعلم الذاتي , مهارات التواصل",
         "languages": "",
         "offerTime": "",
         "password": "",
@@ -60,9 +60,9 @@
   "projects": [
     {
       "id": "p001",
-      "mainImage": {"url" : "" , "alt" :""},
-      "title": "....",
-      "desc": "...",
+      "mainImage": {"url" : "./assets/images/test.jpg" , "alt" :""},
+      "title": "موقع للسيارات",
+      "desc": "متجر الكتروني لبيع السيارات  , بوابات دفع  ",
       "full_desc": {
         "desc1": "",
         "desc2": "",
@@ -70,11 +70,12 @@
         "desc4": ""
       },
       "start_date": "2026-01-10",
-      "expected_end": "..",
+      "expected_end": "2026-06-10",
       "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
       "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-      "status": "قيد التحضير / منجز / يحتاج متطوعين",
-      "views": "",
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"منجز",
+      "views": "10",
       "catigory": "web",
       "volunteers": [
         {
@@ -88,12 +89,96 @@
       ],
       "comments": [
         {
-          "userName": "",
-          "content": ""
+          "userName": "نور",
+          "content": "جميل جدا"
         },
         {
-          "userName": "",
-          "content": ""
+          "userName": "جميل",
+          "content": "  ليس سيئا"
+        }
+      ],
+      "link": "https://example.com/projects/p001"
+    },
+     {
+      "id": "p002",
+      "mainImage": {"url" : "./assets/images/test.jpg" , "alt" :""},
+            "title": "موقع للسيارات",
+      "desc": "متجر الكتروني لبيع السيارات  , بوابات دفع  ",
+
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "start_date": "2026-01-10",
+      "expected_end": "2026-06-10",
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"قيد التحضير",
+      "views": "10",
+      "catigory": "web",
+      "volunteers": [
+        {
+          "id": "v10",
+          "profilePhoto": {"url" : "" , "alt" :""}
+        },
+        {
+          "id": "v11",
+          "profilePhoto": {"url" : "" , "alt" :""}
+        }
+      ],
+      "comments": [
+        {
+          "userName": "نور",
+          "content": "جميل جدا"
+        },
+        {
+          "userName": "جميل",
+          "content": "  ليس سيئا"
+        }
+      ],
+      "link": "https://example.com/projects/p001"
+    },
+     {
+      "id": "p002",
+      "mainImage": {"url" : "./assets/images/test.jpg" , "alt" :""},
+            "title": "موقع للسيارات",
+      "desc": "متجر الكتروني لبيع السيارات  , بوابات دفع  ",
+
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "start_date": "2026-01-10",
+      "expected_end": "2026-06-10",
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"قيد التحضير",
+      "views": "10",
+      "catigory": "web",
+      "volunteers": [
+        {
+          "id": "v10",
+          "profilePhoto": {"url" : "" , "alt" :""}
+        },
+        {
+          "id": "v11",
+          "profilePhoto": {"url" : "" , "alt" :""}
+        }
+      ],
+      "comments": [
+        {
+          "userName": "نور",
+          "content": "جميل جدا"
+        },
+        {
+          "userName": "جميل",
+          "content": "  ليس سيئا"
         }
       ],
       "link": "https://example.com/projects/p001"
@@ -109,13 +194,13 @@
       "id": "post001",
       "author": {
         "author_id": "user_",
-        "name": "",
-        "specialty": "",
-        "profile_image": {"url" : "" , "alt" :""}
+        "name": "مستخدم",
+        "specialty": " مهندس",
+        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
       },
-      "mainImage": "...",
-      "title": "....",
-      "description": "...",
+      "mainImage": "./assets/images/test4.jpg",
+      "title": "مقالة1",
+      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
       "date": "2024-06-01",
       "readingTime": { "icon": "", "time": "" },
       "full_desc": {
@@ -126,8 +211,83 @@
       },
       "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
       "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-      "status": "قيد التحضير / منجز / يحتاج متطوعين",
-      "views": "",
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"منجز",
+      "views": "20",
+      "catigory": "web",
+      "comments": [
+        {
+          "userName": "",
+          "content": ""
+        },
+        {
+          "userName": "",
+          "content": ""
+        }
+      ]
+    },
+     {
+      "id": "post001",
+      "author": {
+        "author_id": "user_",
+               "name": "مستخدم",
+        "specialty": " مهندس",
+        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
+
+      },
+      "mainImage": "./assets/images/test4.jpg",
+      "title": "مقالة1",
+      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
+      "date": "2024-06-01",
+      "readingTime": { "icon": "", "time": "" },
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"منجز",
+      "views": "20",
+      "catigory": "web",
+      "comments": [
+        {
+          "userName": "",
+          "content": ""
+        },
+        {
+          "userName": "",
+          "content": ""
+        }
+      ]
+    },
+     {
+      "id": "post001",
+      "author": {
+        "author_id": "user_",
+          "name": "مستخدم",
+        "specialty": " مهندس",
+        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
+
+      },
+      "mainImage": "./assets/images/test4.jpg",
+      "title": "مقالة1",
+      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
+        "date": "2024-06-01",
+      "readingTime": { "icon": "", "time": "" },
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"منجز",
+      "views": "20",
       "catigory": "web",
       "comments": [
         {
@@ -146,32 +306,116 @@
 
 
 
-  "ourTeam": [
+  "posts": [
     {
-      "id": "v101",
-      "userName": "",
-      "role": "Computer Technology",
-      "profilePhoto": {"url" : "images/profiles/ahmad.jpg" , "alt" :""},
-      "bio": "",
-
-      "social_links": {
-        "linkedin": "https://linkedin.com/in/ahmad",
-        "github": "https://github.com/ahmad",
-        "facebook": "https://facebook.com/ahmad"
-      }
+      "id": "post001",
+      "author": {
+        "author_id": "user_",
+        "name": "مستخدم",
+        "specialty": " مهندس",
+        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
+      },
+      "mainImage": "./assets/images/test4.jpg",
+      "title": "مقالة1",
+      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
+      "date": "2024-06-01",
+      "readingTime": { "icon": "", "time": "" },
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"منجز",
+      "views": "20",
+      "catigory": "web",
+      "comments": [
+        {
+          "userName": "",
+          "content": ""
+        },
+        {
+          "userName": "",
+          "content": ""
+        }
+      ]
     },
-    {
-      "id": "v102",
-      "userName": "",
-      "role": "Computer Technology",
-      "profilePhoto": {"url" : "" , "alt" :""},
-      "bio": "",
+     {
+      "id": "post001",
+      "author": {
+        "author_id": "user_",
+               "name": "مستخدم",
+        "specialty": " مهندس",
+        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
 
-      "social_links": {
-        "linkedin": "https://linkedin.com/in/ahmad",
-        "github": "https://github.com/ahmad",
-        "facebook": "https://facebook.com/ahmad"
-      }
+      },
+      "mainImage": "./assets/images/test4.jpg",
+      "title": "مقالة1",
+      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
+      "date": "2024-06-01",
+      "readingTime": { "icon": "", "time": "" },
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"منجز",
+      "views": "20",
+      "catigory": "web",
+      "comments": [
+        {
+          "userName": "",
+          "content": ""
+        },
+        {
+          "userName": "",
+          "content": ""
+        }
+      ]
+    },
+     {
+      "id": "post001",
+      "author": {
+        "author_id": "user_",
+          "name": "مستخدم",
+        "specialty": " مهندس",
+        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
+
+      },
+      "mainImage": "./assets/images/test4.jpg",
+      "title": "مقالة1",
+      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
+        "date": "2024-06-01",
+      "readingTime": { "icon": "", "time": "" },
+      "full_desc": {
+        "desc1": "",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+      },
+      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
+       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
+       "status":"منجز",
+      "views": "20",
+      "catigory": "web",
+      "comments": [
+        {
+          "userName": "",
+          "content": ""
+        },
+        {
+          "userName": "",
+          "content": ""
+        }
+      ]
     }
   ],
 
