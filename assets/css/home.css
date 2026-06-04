@@ -50,12 +50,12 @@
   flex-wrap: wrap;
   margin: 46px 0;
   justify-content: center;
-  gap: 39px;
+      gap: 34px;
 }
 .project-card,
 .team-card {
   direction: rtl;
-  width: 400px;
+    width: 408px;
   height: max-content;
   border-radius: 5px;
   background-color: var(--purple-10);
@@ -76,10 +76,18 @@
 .card-details {
   margin: 18px;
 }
+.card-description a{
+  color: var(--purple-7);
+
+}
+.card-description a:hover {
+  color: var(--purple-5);
+    text-decoration: underline;
+}
 .card-details {
   display: flex;
   justify-content: right;
-  gap: 40px;
+     gap: 22px;
 }
 .card-cta {
   text-align: center;
@@ -90,7 +98,7 @@
 }
 .all-projects {
   text-align: center;
-  margin: 20px;
+    margin: 40px
 }
 .all-projects .home-bottons {
   width: 19%;

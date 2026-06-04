@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="./assets/css/blog.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -20,56 +18,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>متطوع</title>
   </head>
 
   <body>
     <main>
       <header>
-        <nav class="navbar-lg fcb">
-          <div class="home-actions">
-            <button class="home-bottons"><a href="./login.html">تسجيل الدخول</a></button>
-            <button class="home-bottons"><a href="./register.html">انضم الآن</a></button>
-<!--             <h3>EN</h3> -->
-          </div>
-          <ul class="home-menu fca">
-           <li id="contactUS"><a href="">تواصل معنا</a></li>
-           <li id="ourTeam"><a href="#our-team">فريقنا</a></li>
-           <li id="aboutUS"><a href="#about-us">من نحن</a></li>
-           <li id="articles"><a href="#articles-section">المقالات</a></li>
-           <li id="projects"><a href="#projects">المشاريع</a></li>
-           <li id="home" class="active"><a href="./index.html">الرئيسية</a></li>
-   
-          </ul>
-
-          <h1 class="home-logo">متطوع</h1>
-        </nav>
-
-
-   <nav class="mobile-nav">
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <h1 class="home-logo">متطوع</h1>
-</nav>
-
-<div class="side-menu" id="sideMenu">
-  <ul>
-             <li id="contactUS"><a href="">تواصل معنا</a></li>
-           <li id="ourTeam"><a href="#our-team">فريقنا</a></li>
-           <li id="aboutUS"><a href="#about-us">من نحن</a></li>
-           <li id="articles"><a href="#articles-section">المقالات</a></li>
-           <li id="projects"><a href="#projects">المشاريع</a></li>
-           <li id="home" class="active"><a href="./index.html">الرئيسية</a></li>
-            <div class="home-actions">
-            <button class="home-bottons"><a href="./login.html">تسجيل الدخول</a></button>
-            <button class="home-bottons"><a href="./register.html">انضم الآن</a></button>
-          </div>
-  </ul>
-
-</div>
+        
+       <main-navbar></main-navbar>
 
         <section class="hero">
           <div class="hero-img-container">
@@ -86,7 +42,7 @@
         </section>
       </header>
 
-      <section class="projects" >
+      <section  id="projects" class="projects" >
         <h1 class="home-section-title">المشاريع</h1>
         <div class="projects-container fcb">
           <div class="project-card">
@@ -101,13 +57,15 @@
             <p class="card-description">
               هذا وصف موجز للمشروع 1. يهدف هذا المشروع إلى تحقيق أهداف محددة من
               خلال تنفيذ خطة عمل فعالة....
-              <a href="#">اقرأ المزيد</a>
+              <a href="./project.details.html">اقرأ المزيد</a>
             </p>
-            <p class="card-details">
-              <span><i class="fa-solid fa-users"></i> المتطوعين</span
-              ><span><i class="fa-solid fa-clock"></i> حالة المشروع</span
-              ><span>نوع المشروع</span>
-            </p>
+           
+      <p class="card-details">
+        <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
+        <span><i class="fa-solid fa-eye"></i> 120</span>
+        <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
+        <span><i class="fa-solid fa-layer-group"></i> Web</span>
+      </p>
             <div class="card-cta">
               <button class="home-bottons">انضم للمشروع</button>
             </div>
@@ -124,13 +82,15 @@
             <p class="card-description">
               هذا وصف موجز للمشروع 2. يهدف هذا المشروع إلى تحقيق أهداف محددة من
               خلال تنفيذ خطة عمل فعالة....
-              <a href="#">اقرأ المزيد</a>
+              <a href="./project.details.html">اقرأ المزيد</a>
             </p>
-            <p class="card-details">
-              <span><i class="fa-solid fa-users"></i> المتطوعين </span
-              ><span><i class="fa-solid fa-clock"></i> حالة المشروع</span
-              ><span>نوع المشروع</span>
-            </p>
+           
+      <p class="card-details">
+        <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
+        <span><i class="fa-solid fa-eye"></i> 120</span>
+        <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
+        <span><i class="fa-solid fa-layer-group"></i> Web</span>
+      </p>
             <div class="card-cta">
               <button class="home-bottons">انضم للمشروع</button>
             </div>
@@ -147,15 +107,17 @@
             <p class="card-description">
               هذا وصف موجز للمشروع3. يهدف هذا المشروع إلى تحقيق أهداف محددة من
               خلال تنفيذ خطة عمل فعالة....
-              <a href="#">اقرأ المزيد</a>
+              <a href="./project.details.html">اقرأ المزيد</a>
             </p>
-            <p class="card-details">
-              <span><i class="fa-solid fa-users"></i> المتطوعين</span
-              ><span><i class="fa-solid fa-clock"></i> حالة المشروع</span
-              ><span>نوع المشروع</span>
-            </p>
+            
+      <p class="card-details">
+        <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
+        <span><i class="fa-solid fa-eye"></i> 120</span>
+        <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
+        <span><i class="fa-solid fa-layer-group"></i> Web</span>
+      </p>
             <div class="card-cta">
-              <button class="home-bottons">انضم للمشروع</button>
+              <button id="joinToProject" class="home-bottons">انضم للمشروع</button>
             </div>
           </div>
         </div>
@@ -164,92 +126,141 @@
         </div>
       </section>
 
-     <section class="articles-section" >
-      <div class="container">
-        <div class="section-heading">
-          <h2 class="section-title">المقالات</h2>
-          <span class="section-title-bg">حصري</span>
+      <section id="articles-section" class="articles-section">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title">المقالات</h2>
+            <span class="section-title-bg">حصري</span>
+          </div>
+          <div class="articles-grid">
+            <div class="article-card">
+              <div class="card-img">
+                <img src="./assets/images/ai.webp" alt="الذكاء الاصطناعي" />
+              </div>
+              <div class="card-content">
+                <span class="card-category">الذكاء الاصطناعي</span>
+                <h3 class="card-title">
+                  <a href="article.html?id=1"
+                    >كيف تغير نماذج اللغة الكبيرة (LLMs) مستقبل البرمجة؟</a
+                  >
+                </h3>
+                <p class="card-description">
+                  هذا وصف موجز للمقالة. يهدف هذا المقال إلى شرح تأثير LLMs على
+                  البرمجة...
+                  <a href="article.html" class="read-more-link">اقرأ المزيد</a>
+                </p>
+                <div class="card-footer">
+                  <div class="volunteer-info">
+                    <i class="fas fa-user-circle"></i>
+                    <span>أدهم</span>
+                  </div>
+                  <div class="post-meta">
+                    <span
+                      ><i class="far fa-calendar-alt"></i> 10 يناير 2026</span
+                    >
+                    <span><i class="far fa-clock"></i> 6 دقائق</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article-card">
+              <div class="card-img">
+                <img
+                  src="./assets/images/cyberscurity.webp"
+                  alt="الأمن السيبراني"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-category">الأمن السيبراني</span>
+                <h3 class="card-title">
+                  <a href="article.html?id=2"
+                    >أحدث هجمات الفدية (Ransomware) وطرق الحماية منها</a
+                  >
+                </h3>
+                <p class="card-description">
+                  شرح لأحدث هجمات الفدية وأساليب الحماية الحديثة...
+                  <a href="article.html" class="read-more-link">اقرأ المزيد</a>
+                </p>
+                <div class="card-footer">
+                  <div class="volunteer-info">
+                    <i class="fas fa-user-circle"></i>
+                    <span>حميد</span>
+                  </div>
+                  <div class="post-meta">
+                    <span
+                      ><i class="far fa-calendar-alt"></i> 8 يناير 2026</span
+                    >
+                    <span><i class="far fa-clock"></i> 5 دقائق</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="article-card">
+              <div class="card-img">
+                <img src="./assets/images/it.webp" alt="Quantum" />
+              </div>
+              <div class="card-content">
+                <span class="card-category">تقنيات متقدمة</span>
+                <h3 class="card-title">
+                  <a href="article.html?id=3"
+                    >الحوسبة الكمومية: هل تنهي التشفير كما نعرفه؟</a
+                  >
+                </h3>
+                <p class="card-description">
+                  نظرة على تأثير الحوسبة الكمومية على أنظمة التشفير الحالية...
+                  <a href="article.html" class="read-more-link">اقرأ المزيد</a>
+                </p>
+                <div class="card-footer">
+                  <div class="volunteer-info">
+                    <i class="fas fa-user-circle"></i>
+                    <span>راما</span>
+                  </div>
+                  <div class="post-meta">
+                    <span
+                      ><i class="far fa-calendar-alt"></i> 5 يناير 2026</span
+                    >
+                    <span><i class="far fa-clock"></i> 8 دقائق</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="article-card">
+              <div class="card-img">
+                <img src="./assets/images/deepfake.webp" alt="Deepfake" />
+              </div>
+              <div class="card-content">
+                <span class="card-category">أمن الذكاء الاصطناعي</span>
+                <h3 class="card-title">
+                  <a href="article.html?id=4"
+                    >التزييف العميق (Deepfake): تهديد رقمي وكيف تكتشفه</a
+                  >
+                </h3>
+                <p class="card-description">
+                  كيف تعمل تقنيات التزييف العميق وطرق اكتشافها...
+                  <a href="article.html" class="read-more-link">اقرأ المزيد</a>
+                </p>
+                <div class="card-footer">
+                  <div class="volunteer-info">
+                    <i class="fas fa-user-circle"></i>
+                    <span>حلا</span>
+                  </div>
+                  <div class="post-meta">
+                    <span
+                      ><i class="far fa-calendar-alt"></i> 2 يناير 2026</span
+                    >
+                    <span><i class="far fa-clock"></i> 7 دقائق</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="articles-grid">
-
-          <div class="article-card">
-            <div class="card-img">
-              <img src="./assets/images/ai.webp" alt="الذكاء الاصطناعي">
-            </div>
-            <div class="card-content">
-              <span class="card-category">الذكاء الاصطناعي</span>
-              <h3 class="card-title">
-                <a href="article.html?id=1">كيف تغير نماذج اللغة الكبيرة (LLMs) مستقبل البرمجة؟</a>
-              </h3>
-              <div class="card-meta">
-                <span><i class="far fa-calendar-alt"></i> 10 يناير 2026</span>
-                <span><i class="far fa-clock"></i> 6 دقائق</span>
-
-              </div>
-              <a href="article.html" class="read-more-btn">اقرأ المزيد</a>
-
-            </div>
-          </div>
-
-          <div class="article-card">
-            <div class="card-img">
-              <img src="./assets/images/cyberscurity.webp" alt="الأمن السيبراني">
-            </div>
-            <div class="card-content">
-              <span class="card-category">الأمن السيبراني</span>
-              <h3 class="card-title">
-                <a href="article.html?id=2">أحدث هجمات الفدية (Ransomware) وطرق الحماية منها</a>
-              </h3>
-              <div class="card-meta">
-                <span><i class="far fa-calendar-alt"></i> 8 يناير 2026</span>
-                <span><i class="far fa-clock"></i> 5 دقائق</span>
-              </div>
-                            <a href="article.html" class="read-more-btn">اقرأ المزيد</a>
-
-            </div>
-          </div>
-
-          <div class="article-card">
-            <div class="card-img">
-              <img src="./assets/images/it.webp" alt="Quantum">
-            </div>
-            <div class="card-content">
-              <span class="card-category">تقنيات متقدمة</span>
-              <h3 class="card-title">
-                <a href="article.html?id=3">الحوسبة الكمومية: هل تنهي التشفير كما نعرفه؟</a>
-              </h3>
-              <div class="card-meta">
-                <span><i class="far fa-calendar-alt"></i> 5 يناير 2026</span>
-                <span><i class="far fa-clock"></i> 8 دقائق</span>
-              </div>
-                            <a href="article.html" class="read-more-btn">اقرأ المزيد</a>
-
-            </div>
-          </div>
-
-          <div class="article-card">
-            <div class="card-img">
-              <img src="./assets/images/deepfake.webp" alt="Deepfake">
-            </div>
-            <div class="card-content">
-              <span class="card-category">أمن الذكاء الاصطناعي</span>
-              <h3 class="card-title">
-                <a href="article.html?id=4">التزييف العميق (Deepfake): تهديد رقمي وكيف تكتشفه</a>
-              </h3>
-              <div class="card-meta">
-                <span><i class="far fa-calendar-alt"></i> 2 يناير 2026</span>
-                <span><i class="far fa-clock"></i> 7 دقائق</span>
-              </div>
-                            <a href="article.html" class="read-more-btn">اقرأ المزيد</a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
 
-      <section class="about-us">
+      <section id="about-us" class="about-us">
         <h1 class="home-section-title">أهدافنا</h1>
         <div class="about-us-container fcb">
           <div class="about-us-card">
@@ -281,7 +292,7 @@
 
 
 
-      <section class="our-team">
+      <section id="our-team" class="our-team">
         <h1 class="home-section-title">فريقنا</h1>
         <div class="team-container fcb">
          <div class="project-card">
@@ -364,122 +375,12 @@
       <section class="join-now">
         <h2 class="join-title">انضم الآن</h2>
         <div class="home-actions join-actions">
-             <button class="home-bottons"><a  href="./projects.html">ارسل رسالة</a></button>
+             <button class="home-bottons"><a  href="">ارسل رسالة</a></button>
             <button class="home-bottons"><a href="./register.html">انشىء حساب</a></button>
           </div>
       </section>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-cta fcb">
-            <div class="footer-cta-item">
-              <i class="cta-text-icon fas fa-map-marker-alt"></i>
-              <div class="cta-text">
-                <h3>العنوان</h3>
-                <span>سلمية - شارع حمص الفرعي</span>
-              </div>
-            </div>
-            <div class="footer-cta-item">
-              <i class="cta-text-icon fa-solid fa-phone-flip"></i>
-              <div class="cta-text">
-                <h3>تواصل معنا</h3>
-                <span>0000000000</span>
-              </div>
-            </div>
-            <div class="footer-cta-item">
-              <i class="cta-text-icon far fa-envelope-open"></i>
-              <div class="cta-text">
-                <h3>راسلنا</h3>
-                <span>mail@info.com</span>
-              </div>
-            </div>
-          </div>
-        
-
-          <div class="footer-content">
-            <div class="footer-social">
-              <div class="footer-logo">
-                <h2><a href="index.html">متطوع</a></h2>
-              </div>
-              <div class="footer-text">
-                <p>
-                  فريق متطوع هوفريق تطوعي تابع لشركة أوربيت يساهم في خدمة وتطوير
-                  البرامج فريق متطوع هوفريق تطوعي تابع لشركة أوربيت يساهم في
-                  خدمة وتطوير البرامج
-                </p>
-              </div>
-            </div>
-
-            <div class="footer-links">
-              <div class="footer-content-heading">
-                <h3>روابط مفيدة</h3>
-              </div>
-              <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">المشاريع</a></li>
-                <li><a href="#">تواصل معنا</a></li>
-                <li><a href="#">فريقنا</a></li>
-                <li><a href="#">المقالات</a></li>
-                <li><a href="#">آخر الاخبار</a></li>
-              </ul>
-            </div>
-            <div class="footer-links">
-              <div class="footer-content-heading">
-                <h3>روابط مفيدة</h3>
-              </div>
-              <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">المشاريع</a></li>
-                <li><a href="#">تواصل معنا</a></li>
-                <li><a href="#">فريقنا</a></li>
-                <li><a href="#">المقالات</a></li>
-                <li><a href="#">آخر الاخبار</a></li>
-              </ul>
-            </div>
-            <div class="footer-social-icon">
-              <div class="footer-content-heading">
-                <h3>تابعنا على</h3>
-              </div>
-              <div class="footer-icons">
-                <a href="#"
-                  ><i class="cta-text-icon fa-brands fa-facebook-f"></i
-                ></a>
-                <a href="#">
-                  <i class="cta-text-icon fa-brands fa-github"></i
-                ></a>
-                <a href="#">
-                  <i class="cta-text-icon fa-brands fa-linkedin"></i
-                ></a>
-                <a href="#"> <i class="cta-text-icon fa-solid fa-globe"></i></a>
-                <a href="#">
-                  <i class="cta-text-icon fa-brands fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div class="copyright-area fce">
-          <div class="footer-menu">
-            <ul>
-              <li  class="active"><a href="#">Home</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Policy</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="copyright-text">
-            <p>
-              Copyright &copy; 2026, All Right Reserved
-              <a href="#">Orbit</a>
-            </p>
-          </div>
-        </div>
-      </footer>
+     <main-footer></main-footer>
     </main>
-
 
 
 <script src="./assets/js/main.js"></script>

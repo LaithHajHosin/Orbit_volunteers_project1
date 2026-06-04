@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 :root {
   /* === 10 PURPLE COLORS (Light to Dark) === */
@@ -17,6 +17,9 @@
   --purple-9: #3b0764; /* very dark purple */
   --purple-10: #2a004f; /* deepest dark purple */
 }
+html {
+  scroll-behavior: smooth;
+}
 main {
   /*  background-color: var(--purple-2); */
   background-image: url(../images/test5.jpg);
@@ -27,6 +30,7 @@ main {
 }
 a {
   text-decoration: none;
+  color: var(--purple-9);
 }
 li {
   list-style-type: none;
@@ -181,8 +185,8 @@ footer {
   color: var(--purple-10);
   font-size: 18px;
 }
-.footer-icons .cta-text-icon{
-      margin-bottom: 19px;
+.footer-icons .cta-text-icon {
+  margin-bottom: 19px;
 }
 .copyright-area {
   width: 100%;
@@ -266,7 +270,7 @@ footer {
   .side-menu ul {
     list-style: none;
     padding: 1rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
     /* padding-right: 1rem; */
     direction: rtl;
   }
@@ -292,36 +296,68 @@ footer {
   .side-menu ul .home-actions .home-bottons {
     width: 100%;
   }
+  .all-projects .home-bottons {
+    width: 28%;
+    padding: 16px;
+    font-size: 11px;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer-social-icon {
+    margin: 30px auto;
+    width: 100%;
+  }
+  .footer-icons {
+    display: flex;
+  }
 }
 
 @media (max-width: 600px) {
+  .all-projects .home-bottons {
+    width: 25%;
+    padding: 16px;
+    font-size: 9px;
+  }
   .footer-cta {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 4rem 8rem;
-          width: 34%;
+    width: 34%;
     margin: auto;
   }
   .footer-content {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 9rem 22rem;
-        width: 55%;
-        margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 17rem 20rem;
+    width: 55%;
+    margin: auto;
+    text-align: center;
   }
   .footer-logo {
     margin-bottom: 30px;
     font-size: 31px;
     text-align: center;
-}
-
-.footer-logo , .footer-content-heading{
-  text-align: center;
-}
-.footer-social-icon {
-    margin-top: 33px;
-}
-.footer-menu {
-  display: none;
-}
+  }
+  .footer-text {
+    text-align: center;
+  }
+  .footer-logo,
+  .footer-content-heading {
+    text-align: center;
+  }
+  .footer-social-icon {
+    margin: 33px auto;
+  }
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-menu {
+    display: none;
+  }
 }
