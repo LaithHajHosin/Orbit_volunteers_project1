@@ -2,30 +2,27 @@
   padding: 40px 0;
   margin-top: 78px;
 }
-
 .article-hero-inner {
   background: white;
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.05);
   direction: rtl;
-  overflow: hidden;  /* يحتوي العناصر العائمة */
+  overflow: hidden;  
 }
-
 .article-cover {
   margin: 24px;
-  float: right;            /* الصورة تطفو إلى اليمين في RTL */
+  float: right;            
   width: 577px;
   height: 313px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  margin-left: 24px;       /* مسافة بين الصورة والنص */
+  margin-left: 24px;      
   margin-bottom: 16px;
 }
 
 .article-info {
-  /* لا نحدد عرض، النص سيلتف حول الصورة تلقائياً */
   text-align: right;
 }
 
@@ -54,15 +51,12 @@
   font-size: 1rem;
   color: #2c3e3f;
   text-align: justify;
-  /* لا حاجة border-top هنا، سيكون طبيعياً */
 }
 
-/* تأكد من أن أي عنصر آخر لا يفسد التدفق */
 .article-full-text-inline p {
   margin: 0 0 1em;
 }
 
-/* للشاشات الصغيرة: تعطيل float وجعل الترتيب عمودياً */
 @media (max-width: 768px) {
   .article-cover {
     float: none;
@@ -128,11 +122,8 @@
   line-height: 1.8;
   font-size: 1rem;
   color: #2c3e3f;
-  text-align: justify;      /* لتوسيط النص بشكل جميل */
+  text-align: justify;     
 }
-
-
-
 .back-link {
   display: inline-block;
   margin-bottom: 20px;
@@ -155,7 +146,6 @@
     object-fit: cover;
   }
 }
-/* ===== قسم التفاعل ===== */
 .interaction-section {
   background: white;
   border-radius: 12px;
@@ -261,36 +251,6 @@
   border-radius: 8px;
   cursor: pointer;
 }
-/* تنسيق وقت القراءة */
-/* .reading-time {
-  font-size: 0.85rem;
-  color: var(--purple-6);
-  margin: 8px 0 16px;
-  text-align: center;
-}
-
-/* تنسيق المشاهدات والتاريخ الجديد أسفل اللايك */
-/* .post-stats-footer {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-top: 20px;
-  padding-top: 12px;
-  border-top: 1px solid #eee;
-  font-size: 0.8rem;
-  color: #5b5b7a;
-}
-
-.post-stats-footer i {
-  margin-left: 0;
-  margin-right: 6px;
-} */
-
-/* جعل العنوان في المنتصف */
-/* .article-info h1 {
-  text-align: center;
-} */ 
- /* تنسيق التاريخ */
 .post-date {
   font-size: 0.85rem;
   color: #5b5b7a;
@@ -298,7 +258,6 @@
   text-align: center;
 }
 
-/* تنسيق وقت القراءة والمشاهدات داخل صف اللايكات */
 .reading-views-stats {
   display: inline-flex;
   align-items: center;
@@ -314,11 +273,11 @@
   color: var(--purple-6);
 }
 
-/* جعل الـ likes-dislikes يستخدم flex لتوزيع العناصر أفقياً */
+/* likes-dislikes */
 .likes-dislikes {
   display: flex;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;  /* أو space-between إذا أردت توزيعاً مختلفاً */
+  justify-content: center;  
 }
