@@ -226,7 +226,7 @@ footer {
     padding: 1rem;
     background-color: var(--purple-3);
     width: 100%;
-    padding-inline: 3rem;
+    padding-inline: 1.2rem;
   }
 
   .mobile-nav .hamburger {
@@ -264,12 +264,12 @@ footer {
     height: 100vh;
     background-color: var(--purple-3);
     color: var(--purple-8);
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     transition: right 0.3s ease;
   }
   .side-menu ul {
     list-style: none;
-    padding: 1rem;
+    padding: 1.2rem;
     padding-top: 5rem;
     /* padding-right: 1rem; */
     direction: rtl;
@@ -281,6 +281,9 @@ footer {
     color: var(--purple-8);
     text-decoration: none;
     font-size: 1rem;
+  }
+  .side-menu ul li .home-bottons a {
+    color: var(--purple-1);
   }
   .side-menu.open {
     display: block;
@@ -304,8 +307,8 @@ footer {
   .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 12px;
+    padding-bottom: 11px;
   }
   .footer-social-icon {
     margin: 30px auto;
@@ -326,14 +329,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 4rem 8rem;
-    width: 34%;
-    margin: auto;
+    width: 50%;
+    margin: 13px auto;
   }
   .footer-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 17rem 20rem;
-    width: 55%;
+    width: 100%;
     margin: auto;
     text-align: center;
   }

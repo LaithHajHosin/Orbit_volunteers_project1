@@ -8,11 +8,11 @@
 .hero-img-container {
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 .hero-img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .hero-text {
   position: absolute;
@@ -41,7 +41,7 @@
   text-align: center;
   color: var(--purple-1);
   margin-bottom: 75px;
-  margin-top: 68px;
+  margin-top: 75px;
 }
 .projects-container,
 .team-container,
@@ -50,12 +50,12 @@
   flex-wrap: wrap;
   margin: 46px 0;
   justify-content: center;
-      gap: 34px;
+  gap: 34px;
 }
 .project-card,
 .team-card {
   direction: rtl;
-    width: 408px;
+  width: 408px;
   height: max-content;
   border-radius: 5px;
   background-color: var(--purple-10);
@@ -74,20 +74,19 @@
 .card-title,
 .card-description,
 .card-details {
-  margin: 18px;
+    margin: 14px;
 }
-.card-description a{
+.card-description a {
   color: var(--purple-7);
-
 }
 .card-description a:hover {
   color: var(--purple-5);
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .card-details {
   display: flex;
   justify-content: right;
-     gap: 22px;
+  gap: 22px;
 }
 .card-cta {
   text-align: center;
@@ -98,7 +97,7 @@
 }
 .all-projects {
   text-align: center;
-    margin: 40px
+  margin: 40px;
 }
 .all-projects .home-bottons {
   width: 19%;
@@ -176,14 +175,19 @@
   background-color: var(--purple-8);
 }
 
+@media (max-width: 1200px) {
+  .hero-actions button {
+    font-size: 14px;
+  }
+}
 @media (max-width: 1088px) {
   .hero-text {
     font-size: 23px;
   }
-    .join-actions .home-bottons {
+  .join-actions .home-bottons {
     padding: 15px;
     font-size: 20px;
-}
+  }
 }
 
 @media (max-width: 880px) {
@@ -191,19 +195,28 @@
     font-size: 18px;
   }
   .hero-actions button {
-    font-size: 15px;
+    font-size: 11px;
     padding: 10px;
   }
-   .join-actions {
-  display: inline-grid;
-   }
-  .join-actions .home-bottons{
-        width: 100%;
+  .home-section-title {
+    margin-bottom: 51px;
+    margin-top: 51px;
   }
 
+  .join-actions {
+    display: inline-grid;
+    margin: 0px auto;
+  }
+  .join-actions .home-bottons {
+    width: 100%;
+  }
 }
 
 @media (max-width: 680px) {
+  .hero-img {
+    object-fit: none;
+    object-position: left;
+  }
   .hero-text {
     left: 43%;
     top: 59%;
@@ -211,10 +224,35 @@
   .hero-actions {
     display: none;
   }
+  .all-projects .home-bottons {
+    width: 28%;
+  }
+    .card-details {
+   font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 @media (max-width: 400px) {
   .hero-text {
     left: 35%;
     top: 73%;
   }
+  .all-projects .home-bottons {
+    width: 47%;
+  }
+  .card-title, .card-description, .card-details {
+    margin: 9px;
+}
+  .card-details {
+    font-size: 10px;
+  }
+  .card-description{
+        font-size: 13px;
+  }
+  .join-title {
+    font-size: 36px;
+    margin-bottom: 32px;
+}
 }
