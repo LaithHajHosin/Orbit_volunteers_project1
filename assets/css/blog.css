@@ -1,8 +1,7 @@
-
 .articles-section {
-  padding: 4rem 0;
+ /*  padding: 4rem 0; */
   background: var(--purple-1);
-    margin-top: 78px;
+  margin-top: 78px;
 }
 
 .container {
@@ -13,9 +12,7 @@
 
 .section-heading {
   position: relative;
-  margin-bottom: 3rem;
   text-align: center;
-  padding-top: 2rem;
 }
 
 .section-title {
@@ -27,6 +24,8 @@
   padding: 0 1rem;
   z-index: 2;
   border-radius: 5px;
+  margin-bottom: 75px;
+  margin-top: 75px;
 }
 
 .section-title-bg {
@@ -54,7 +53,9 @@
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-  transition: transform 0.25s ease, box-shadow 0.25s;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -106,7 +107,7 @@
   font-weight: 700;
   margin-bottom: 0.8rem;
   line-height: 1.4;
-  margin: 0;;
+  margin: 0;
 }
 
 .card-title a {
@@ -134,6 +135,10 @@
 }
 
 @media (max-width: 768px) {
+  .section-title {
+    margin-top: 51px;
+    margin-bottom: 51px;
+  }
   .articles-grid {
     grid-template-columns: 1fr;
   }
@@ -156,7 +161,9 @@ nav.fcb {
   padding: 0.6rem 1rem;
   border-radius: 5px;
   text-decoration: none;
-  transition: background 0.25s ease, transform 0.2s;
+  transition:
+    background 0.25s ease,
+    transform 0.2s;
   width: fit-content;
 }
 
@@ -190,7 +197,7 @@ nav.fcb {
   color: #444;
   line-height: 1.5;
   margin: 0 0 0.8rem 0;
-  display: inline; 
+  display: inline;
 }
 
 .read-more-link {
@@ -199,7 +206,7 @@ nav.fcb {
   text-decoration: none;
   font-weight: normal;
   margin-right: 0.3rem;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .read-more-link:hover {
@@ -209,7 +216,7 @@ nav.fcb {
 
 .card-footer {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   margin-top: auto;
   border-top: 1px solid #eee;
@@ -225,7 +232,7 @@ nav.fcb {
   color: #5b5b7a;
 }
 
-.volunteer-info i{
+.volunteer-info i {
   margin-left: 0;
   margin-right: 0.3rem;
   color: var(--purple-6);
@@ -239,7 +246,7 @@ nav.fcb {
   display: flex;
   gap: 1rem;
   font-size: 0.75rem;
-  color: #5b5b7a; 
+  color: #5b5b7a;
 }
 
 .post-meta i {
