@@ -20,8 +20,6 @@
     min-height: 100vh;
 }
 
-/* ================= HERO ================= */
-
 .details-hero{
     display: flex;
 
@@ -138,8 +136,6 @@
     0 10px 25px rgba(123,47,247,.25);
 }
 
-/* ================= SECTION TITLES ================= */
-
 .details-gallery h2,
 .details-volunteers h2,
 .details-comments h2,
@@ -171,9 +167,6 @@
 
     border-radius: 20px;
 }
-
-/* ================= DESCRIPTIONS ================= */
-
 .descriptions-grid{
     display: grid;
 
@@ -212,9 +205,6 @@
 
     color: #666;
 }
-
-/* ================= GALLERY ================= */
-
 .details-gallery{
     margin-top: 70px;
 }
@@ -249,9 +239,6 @@
     box-shadow:
     0 10px 25px rgba(0,0,0,.15);
 }
-
-/* ================= VOLUNTEERS ================= */
-
 .details-volunteers{
     margin-top: 70px;
 }
@@ -286,9 +273,6 @@
 .volunteers-list img:hover{
     transform: translateY(-5px);
 }
-
-/* ================= COMMENTS ================= */
-
 .details-comments{
     margin-top: 70px;
 

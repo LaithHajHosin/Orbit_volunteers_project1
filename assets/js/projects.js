@@ -19,8 +19,7 @@
  
 }
 
-function appendNewitem(
-  mainImage ,
+function appendNewitem(mainImage ,
   title,
   desc,
   volunteers,
