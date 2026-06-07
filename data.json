@@ -73,7 +73,6 @@
       "expected_end": "2026-06-10",
       "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
       "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
        "status":"منجز",
       "views": "10",
       "catigory": "web",
@@ -115,7 +114,6 @@
       "expected_end": "2026-06-10",
       "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
       "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
        "status":"قيد التحضير",
       "views": "10",
       "catigory": "web",
@@ -157,7 +155,6 @@
       "expected_end": "2026-06-10",
       "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
       "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
        "status":"قيد التحضير",
       "views": "10",
       "catigory": "web",
@@ -306,119 +303,7 @@
 
 
 
-  "posts": [
-    {
-      "id": "post001",
-      "author": {
-        "author_id": "user_",
-        "name": "مستخدم",
-        "specialty": " مهندس",
-        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
-      },
-      "mainImage": "./assets/images/test4.jpg",
-      "title": "مقالة1",
-      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
-      "date": "2024-06-01",
-      "readingTime": { "icon": "", "time": "" },
-      "full_desc": {
-        "desc1": "",
-        "desc2": "",
-        "desc3": "",
-        "desc4": ""
-      },
-      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
-       "status":"منجز",
-      "views": "20",
-      "catigory": "web",
-      "comments": [
-        {
-          "userName": "",
-          "content": ""
-        },
-        {
-          "userName": "",
-          "content": ""
-        }
-      ]
-    },
-     {
-      "id": "post001",
-      "author": {
-        "author_id": "user_",
-               "name": "مستخدم",
-        "specialty": " مهندس",
-        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
-
-      },
-      "mainImage": "./assets/images/test4.jpg",
-      "title": "مقالة1",
-      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
-      "date": "2024-06-01",
-      "readingTime": { "icon": "", "time": "" },
-      "full_desc": {
-        "desc1": "",
-        "desc2": "",
-        "desc3": "",
-        "desc4": ""
-      },
-      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
-       "status":"منجز",
-      "views": "20",
-      "catigory": "web",
-      "comments": [
-        {
-          "userName": "",
-          "content": ""
-        },
-        {
-          "userName": "",
-          "content": ""
-        }
-      ]
-    },
-     {
-      "id": "post001",
-      "author": {
-        "author_id": "user_",
-          "name": "مستخدم",
-        "specialty": " مهندس",
-        "profile_image": {"url" : "./assets/images/profilePic.png" , "alt" :""}
-
-      },
-      "mainImage": "./assets/images/test4.jpg",
-      "title": "مقالة1",
-      "description":  " تتىىبثم صتةيثتيا ثاعثا  ثتتثضت القهطة اثىتيىثمح ةؤبثثثثثمنح ثمبثثثثخنصطنصثخنيةؤ..",
-        "date": "2024-06-01",
-      "readingTime": { "icon": "", "time": "" },
-      "full_desc": {
-        "desc1": "",
-        "desc2": "",
-        "desc3": "",
-        "desc4": ""
-      },
-      "albumPhotos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-      "albumVideos": [{"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}, {"url" : "" , "alt" :""}],
-       "statuses":["منجز","يحتاج متطوعين","قيد التحضير"],
-       "status":"منجز",
-      "views": "20",
-      "catigory": "web",
-      "comments": [
-        {
-          "userName": "",
-          "content": ""
-        },
-        {
-          "userName": "",
-          "content": ""
-        }
-      ]
-    }
-  ],
-
+ 
 
 
 

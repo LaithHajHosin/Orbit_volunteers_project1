@@ -5,456 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/project.css" />
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-/>
-    <title>Document</title>
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>projects</title>
   </head>
 
   <body>
     <main>
       <header>
-        <nav class="fcb">
-          <div class="home-actions">
-            <button class="home-bottons">
-              <a href="./login.html">تسجيل الدخول</a>
-            </button>
-            <button class="home-bottons">
-              <a href="./register.html">انضم الآن</a>
-            </button>
-            <h3>EN</h3>
-          </div>
-          <ul class="home-menu fca">
-            <li>من نحن</li>
-            <li>المشاريع</li>
-            <li>المقالات</li>
-            <li>فريقنا</li>
-          </ul>
-
-          <h1 class="home-logo">متطوع</h1>
-        </nav>
-        <section class="hero"></section>
+      <main-navbar></main-navbar>
       </header>
-<section class="projects">
-  <h1 class="home-section-title">المشاريع</h1>
-
-  <div class="projects-grid">
-
-    <!-- card 1 -->
-    <div class="project-card">
-      <div class="card-container-img">
-        <img
-          class="card-image"
-          src="./assets/images/test.jpg"
-          alt="Project Image"
-        />
-      </div>
-
-      <h3 class="card-title">مشروع تعليم الأطفال</h3>
-
-      <p class="card-description">
-        مشروع يهدف إلى دعم الأطفال تعليمياً وتنمية مهاراتهم
-        التقنية والمعرفية ضمن بيئة تعليمية مناسبة...
-        <a href="" target="_blank">اقرأ المزيد</a>
-      </p>
-
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 120</span>
-        <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
-        <span><i class="fa-solid fa-layer-group"></i> Web</span>
-      </p>
-
-      <div class="card-cta">
-        <button class="home-bottons">انضم للمشروع</button>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- card 2 -->
-    <div class="project-card">
-      <div class="card-container-img">
-        <img
-          class="card-image"
-          src="./assets/images/test.jpg"
-          alt="Project Image"
-        />
-      </div>
-
-      <h3 class="card-title">مشروع دعم الطلاب</h3>
-
-      <p class="card-description">
-        مشروع تطوعي يساعد الطلاب على تطوير مهاراتهم
-        البرمجية والتقنية وتحسين فرصهم المهنية...
-        <a href=""target="_blank">اقرأ المزيد</a>
-      </p>
-
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 8 متطوعين</span>
-        <span><i class="fa-solid fa-eye"></i> 240</span>
-        <span><i class="fa-solid fa-clock"></i> يحتاج متطوعين</span>
-        <span><i class="fa-solid fa-layer-group"></i> Design</span>
-      </p>
-
-      <div class="card-cta">
-        <button class="home-bottons">انضم للمشروع</button>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- card 3 -->
-    <div class="project-card">
-      <div class="card-container-img">
-        <img
-          class="card-image"
-          src="./assets/images/test.jpg"
-          alt="Project Image"
-        />
-      </div>
-
-      <h3 class="card-title">مشروع المجتمع الرقمي</h3>
-
-      <p class="card-description">
-        مبادرة تهدف إلى نشر الثقافة الرقمية وتطوير
-        مهارات الشباب في التكنولوجيا والعمل الجماعي...
-        <a href=""target="_blank">اقرأ المزيد</a>
-      </p>
-
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 15 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 410</span>
-        <span><i class="fa-solid fa-clock"></i> منجز</span>
-        <span><i class="fa-solid fa-layer-group"></i> Marketing</span>
-      </p>
-
-      <div class="card-cta">
-        <button class="home-bottons">انضم للمشروع</button>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- card 4 -->
-    <div class="project-card">
-      <div class="card-container-img">
-        <img
-          class="card-image"
-          src="./assets/images/test.jpg"
-          alt="Project Image"
-        />
-      </div>
-
-      <h3 class="card-title">مشروع البيئة النظيفة</h3>
-
-      <p class="card-description">
-        مشروع يهتم بالحفاظ على البيئة وتنظيف الأماكن
-        العامة ونشر الوعي البيئي بين الشباب...
-        <a href=""target="_blank">اقرأ المزيد</a>
-      </p>
-
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 20 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 320</span>
-        <span><i class="fa-solid fa-clock"></i> قيد التنفيذ</span>
-        <span><i class="fa-solid fa-layer-group"></i> Environment</span>
-      </p>
-
-      <div class="card-cta">
-        <button class="home-bottons">انضم للمشروع</button>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- card 5 -->
-    <div class="project-card">
-      <div class="card-container-img">
-        <img
-          class="card-image"
-          src="./assets/images/test.jpg"
-          alt="Project Image"
-        />
-      </div>
-
-      <h3 class="card-title">مشروع تمكين الشباب</h3>
-
-      <p class="card-description">
-        يهدف المشروع إلى دعم الشباب وتطوير قدراتهم
-        المهنية والتقنية عبر تدريبات عملية...
-        <a href=""target="_blank">اقرأ المزيد</a>
-      </p>
-
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 14 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 180</span>
-        <span><i class="fa-solid fa-clock"></i> يحتاج متطوعين</span>
-        <span><i class="fa-solid fa-layer-group"></i> Training</span>
-      </p>
-
-      <div class="card-cta">
-        <button class="home-bottons">انضم للمشروع</button>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- card 6 -->
-    <div class="project-card">
-      <div class="card-container-img">
-        <img
-          class="card-image"
-          src="./assets/images/test.jpg"
-          alt="Project Image"
-        />
-      </div>
-
-      <h3 class="card-title">مشروع الدعم النفسي</h3>
-
-      <p class="card-description">
-        مبادرة تهدف إلى تقديم الدعم النفسي والاجتماعي
-        للأفراد ضمن بيئة آمنة وداعمة...
-        <a href=""target="_blank">اقرأ المزيد</a>
-      </p>
-
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 9 متطوعين</span>
-        <span><i class="fa-solid fa-eye"></i> 275</span>
-        <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
-        <span><i class="fa-solid fa-layer-group"></i> Social</span>
-      </p>
-
-      <div class="card-cta">
-        <button class="home-bottons">انضم للمشروع</button>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- card 7 -->
-    <div class="project-card">
-      <div class="card-container-img">
-        <img
-          class="card-image"
-          src="./assets/images/test.jpg"
-          alt="Project Image"
-        />
-      </div>
-
-      <h3 class="card-title">مشروع القراءة للجميع</h3>
-
-      <p class="card-description">
-        مشروع لنشر ثقافة القراءة وتأمين الكتب
-        وتنظيم فعاليات ثقافية للشباب والأطفال...
-        <a href=""target="_blank">اقرأ المزيد</a>
-      </p>
-
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 11 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 150</span>
-        <span><i class="fa-solid fa-clock"></i> منجز</span>
-        <span><i class="fa-solid fa-layer-group"></i> Education</span>
-      </p>
-
-      <div class="card-cta">
-        <button class="home-bottons">انضم للمشروع</button>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- card 8 -->
-    <div class="project-card">
-      <div class="card-container-img">
-        <img
-          class="card-image"
-          src="./assets/images/test.jpg"
-          alt="Project Image"
-        />
-      </div>
-
-      <h3 class="card-title">مشروع البرمجة للجميع</h3>
-
-      <p class="card-description">
-        مشروع يهدف إلى تعليم البرمجة للمبتدئين
-        عبر جلسات تدريبية ومحتوى تفاعلي...
-        <a href=""target="_blank">اقرأ المزيد</a>
-      </p>
-
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 18 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 500</span>
-        <span><i class="fa-solid fa-clock"></i> قيد التنفيذ</span>
-        <span><i class="fa-solid fa-layer-group"></i> Programming</span>
-      </p>
-
-      <div class="card-cta">
-        <button class="home-bottons">انضم للمشروع</button>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- card 9 -->
-    <div class="project-card">
-      <div class="card-container-img">
-        <img
-          class="card-image"
-          src="./assets/images/test.jpg"
-          alt="Project Image"
-        />
-      </div>
-
-      <h3 class="card-title">مشروع المبادرات الشبابية</h3>
-
-      <p class="card-description">
-        مبادرة لدعم الأفكار الشبابية وتحويلها
-        إلى مشاريع حقيقية تخدم المجتمع...
-        <a href="./project-details.html?id=p009"target="_blank">اقرأ المزيد</a>
-      </p>
-
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 13 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 350</span>
-        <span><i class="fa-solid fa-clock"></i> يحتاج متطوعين</span>
-        <span><i class="fa-solid fa-layer-group"></i> Community</span>
-      </p>
-
-      <div class="card-cta">
-        <button class="home-bottons">انضم للمشروع</button>
-      </div>
-    </div>
-
-  </div>
-</section>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-cta fcb">
-            <div class="footer-cta-item">
-              <i class="cta-text-icon fas fa-map-marker-alt"></i>
-              <div class="cta-text">
-                <h3>العنوان</h3>
-                <span>سلمية - شارع حمص الفرعي</span>
-              </div>
-            </div>
-            <div class="footer-cta-item">
-              <i class="cta-text-icon fa-solid fa-phone-flip"></i>
-              <div class="cta-text">
-                <h3>تواصل معنا</h3>
-                <span>0000000000</span>
-              </div>
-            </div>
-            <div class="footer-cta-item">
-              <i class="cta-text-icon far fa-envelope-open"></i>
-              <div class="cta-text">
-                <h3>راسلنا</h3>
-                <span>mail@info.com</span>
-              </div>
-            </div>
+      <section class="project-hero">
+        <button class="hero-buttons">قدم الآن فكرتك</button>
+        <h3 class="project-hero-text">لديك فكرة مشروع</h3>
+      </section>
+      <section class="projects">
+        <h1 class="home-section-title">المشاريع</h1>
+        <div class="projects-filters">
+          <div class="filters-left">
+            <button class="project-button">بحث الآن عن مشروع</button>
           </div>
-          <hr />
-          <div class="footer-content">
-            <div class="footer-social">
-              <div class="footer-logo">
-                <h2><a href="index.html">متطوع</a></h2>
-              </div>
-              <div class="footer-text">
-                <p>
-                  فريق متطوع هوفريق تطوعي تابع لشركة أوربيت يساهم في خدمة وتطوير
-                  البرامج فريق متطوع هوفريق تطوعي تابع لشركة أوربيت يساهم في
-                  خدمة وتطوير البرامج
-                </p>
-              </div>
-            </div>
 
-            <div class="footer-links">
-              <div class="footer-content-heading">
-                <h3>روابط مفيدة</h3>
-              </div>
-              <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">المشاريع</a></li>
-                <li><a href="#">تواصل معنا</a></li>
-                <li><a href="#">فريقنا</a></li>
-                <li><a href="#">المقالات</a></li>
-                <li><a href="#">آخر الاخبار</a></li>
-              </ul>
-            </div>
-            <div class="footer-links">
-              <div class="footer-content-heading">
-                <h3>روابط مفيدة</h3>
-              </div>
-              <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">المشاريع</a></li>
-                <li><a href="#">تواصل معنا</a></li>
-                <li><a href="#">فريقنا</a></li>
-                <li><a href="#">المقالات</a></li>
-                <li><a href="#">آخر الاخبار</a></li>
-              </ul>
-            </div>
-            <div class="footer-social-icon">
-              <div class="footer-content-heading">
-                <h3>تابعنا على</h3>
-              </div>
-              <div class="footer-icons">
-                <a href="#"
-                  ><i class="cta-text-icon fa-brands fa-facebook-f"></i
-                ></a>
-                <a href="#">
-                  <i class="cta-text-icon fa-brands fa-github"></i
-                ></a>
-                <a href="#">
-                  <i class="cta-text-icon fa-brands fa-linkedin"></i
-                ></a>
-                <a href="#"> <i class="cta-text-icon fa-solid fa-globe"></i></a>
-                <a href="#">
-                  <i class="cta-text-icon fa-brands fa-instagram"></i
-                ></a>
-              </div>
-            </div>
+          <div class="filters-right">
+            <button class="project-button">منجزة</button>
+            <button class="project-button">قيد التحضير</button>
+            <button class="project-button">تبدأ ب</button>
           </div>
         </div>
-        <hr />
-        <div class="copyright-area fce">
-          <div class="footer-menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Policy</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="copyright-text">
-            <p>
-              Copyright &copy; 2026, All Right Reserved
-              <a href="#">Orbit</a>
+        <div class="projects-container fcb">
+          <div class="project-card">
+            <div class="card-container-img">
+              <img
+                class="card-image"
+                src="./assets/images/test.jpg"
+                alt="Project Image"
+              />
+            </div>
+            <h3 class="card-title">مشروع 1</h3>
+            <p class="card-description">
+              هذا وصف موجز للمشروع 1. يهدف هذا المشروع إلى تحقيق أهداف محددة من
+              خلال تنفيذ خطة عمل فعالة....
+              <a href="#">اقرأ المزيد</a>
             </p>
+
+            <p class="card-details">
+              <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
+              <span><i class="fa-solid fa-eye"></i> 120</span>
+              <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
+              <span><i class="fa-solid fa-layer-group"></i> Web</span>
+            </p>
+            <div class="card-cta">
+              <button class="home-bottons">انضم للمشروع</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-container-img">
+              <img
+                class="card-image"
+                src="./assets/images/test.jpg"
+                alt="Project Image"
+              />
+            </div>
+            <h3 class="card-title">مشروع2</h3>
+            <p class="card-description">
+              هذا وصف موجز للمشروع 2. يهدف هذا المشروع إلى تحقيق أهداف محددة من
+              خلال تنفيذ خطة عمل فعالة....
+              <a href="#">اقرأ المزيد</a>
+            </p>
+
+            <p class="card-details">
+              <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
+              <span><i class="fa-solid fa-eye"></i> 120</span>
+              <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
+              <span><i class="fa-solid fa-layer-group"></i> Web</span>
+            </p>
+            <div class="card-cta">
+              <button class="home-bottons">انضم للمشروع</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-container-img">
+              <img
+                class="card-image"
+                src="./assets/images/test.jpg"
+                alt="Project Image"
+              />
+            </div>
+            <h3 class="card-title">مشروع 3</h3>
+            <p class="card-description">
+              هذا وصف موجز للمشروع3. يهدف هذا المشروع إلى تحقيق أهداف محددة من
+              خلال تنفيذ خطة عمل فعالة....
+              <a href="#">اقرأ المزيد</a>
+            </p>
+
+            <p class="card-details">
+              <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
+              <span><i class="fa-solid fa-eye"></i> 120</span>
+              <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
+              <span><i class="fa-solid fa-layer-group"></i> Web</span>
+            </p>
+            <div class="card-cta">
+              <button class="home-bottons">انضم للمشروع</button>
+            </div>
           </div>
         </div>
-      </footer>
+        <div class="all-projects">
+          <button class="home-bottons">
+            <a href="./projects.html">استكشف المزيد</a>
+          </button>
+        </div>
+      </section>
+
+    <main-footer></main-footer>
+
+      <script src="./assets/js/main.js"></script>
     </main>
   </body>
 </html>

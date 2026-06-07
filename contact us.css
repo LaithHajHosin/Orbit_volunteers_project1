@@ -14,27 +14,30 @@ body{
     background-size: cover;
     background-position: center;
 }
-.page-login{
+.contact-page{
     width: 420px;
     background-color: transparent;
-    border: 2px solid black; 
+    /* border: 2px solid black;  */
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
     color: black;
     padding: 30px 40px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    margin-left: 900px;
 }
-.page-login h1{
+.contact-page h3{
     font-size: 36px;
     text-align: center;
+    margin-top: 80px;
+    
 }
-.page-login .input-login{
+.contact-page .input-contact{
     width: 100%;
     height: 50px;
     position: relative;
     margin: 30px 0;
 }
- .input-login input{
+ .input-contact input{
     text-align: right;
     width: 100%;
     height: 100%;
@@ -44,38 +47,11 @@ body{
     border-radius: 40px;
     font-size: 16px;
     color: black;
-    padding: 20px 45px 20px 20px;
+    padding: 20px 30px 20px 20px;
  }
-  .input-login input::placeholder{
-    color: black;
-  }
-   .input-login i{
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-   }
-   .page-login .remember-login{
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-    margin: -15px 0 15px ;
-   }
-
-   .remember-login label input{
-    accent-color: #fff;
-    margin-right: 3px;
-   }
-   .remember-login a{
-    color: black;
-    text-decoration: none;
-   }
-   .remember-login a:hover{
-    text-decoration: underline;
-   }
-   .page-login .btn{
-    width: 100%;
+ .contact-page .btn{
+    position: relative;
+    width: 150px;
     height: 45px;
     background-color: #3b0764;
     border: none;
@@ -86,17 +62,26 @@ body{
     font-size: 20px;
     color: #fff;
     font-weight: 600;
+    margin-left: -560px;
+    margin-top: 20px;
    }
-   .page-login .register{
-    font-size: 15px;
-    text-align: center;
-    margin: 20px 0 25px;
-   }
-   .register p a {
+   .contact-page .pcontact textarea {
     color: black;
     font-size: 15px;
-    text-decoration: none;
+    text-align: right;
    }
-   .register p a:hover {
-    text-decoration: underline;
+   
+   
+   .pcontact{
+    margin-left: -700px;
+    position: absolute;
+    margin-top: -300px;
+   }
+   p{
+    direction: rtl;
+    margin-right: 25px;
+    font-size: 18px ;
+   }
+   .contactp{
+    margin-right: 8px;
    }

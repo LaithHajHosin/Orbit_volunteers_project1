@@ -101,11 +101,12 @@
   margin-bottom: 0.8rem;
 }
 
-.card-title {
+.card-content .card-title {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
   line-height: 1.4;
+  margin: 0;;
 }
 
 .card-title a {
@@ -184,7 +185,7 @@ nav.fcb {
   margin-right: 0.3rem;
 }
 
-.card-description {
+.card-content .card-description {
   font-size: 0.85rem;
   color: #444;
   line-height: 1.5;
