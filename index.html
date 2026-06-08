@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,10 +62,10 @@
             </p>
            
       <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 120</span>
-        <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
-        <span><i class="fa-solid fa-layer-group"></i> Web</span>
+        <span><i class="fa-solid fa-users"></i>  12 متطوع </span>
+        <span><i class="fa-solid fa-eye"></i>  120 </span>
+        <span><i class="fa-solid fa-clock"></i>  قيد التحضير </span>
+        <span><i class="fa-solid fa-layer-group"></i>  Web </span>
       </p>
             <div class="card-cta">
               <button class="home-bottons">انضم للمشروع</button>
@@ -295,7 +296,7 @@
       <section id="our-team" class="our-team">
         <h1 class="home-section-title">فريقنا</h1>
         <div class="team-container fcb">
-         <div class="project-card">
+       <!--   <div class="project-card">
             <div class="card-container-img">
               <img
                 class="card-image"
@@ -319,8 +320,8 @@
                   > facebook</a>
             </p>
             </p>
-          </div>
-          <div class="team-card">
+          </div> -->
+         <!--  <div class="team-card">
             <div class="card-container-img">
               <img
                 class="card-image"
@@ -344,8 +345,8 @@
                   > facebook</a>
             </p>
             </p>
-          </div>
-          <div class="team-card">
+          </div> -->
+      <!--     <div class="team-card">
             <div class="card-container-img">
               <img
                 class="card-image"
@@ -369,7 +370,10 @@
                   > facebook</a>
             </p>
             </p>
-          </div>
+          </div> -->
+        </div>
+          <div class="all-projects">
+          <button class="home-bottons"><a href="./allvolunteers.html">استكشف المزيد</a></button>
         </div>
       </section>
       <section class="join-now">
@@ -383,7 +387,46 @@
     </main>
 
 
+
+<!-- forms -->
+ <div id="login-modal" class="modal-overlay">
+<div class="page-login">
+    <form id="login-form">
+        <h1>تسجيل الدخول</h1>
+        <div class="input-login">
+            <input type="text" id="login-username" placeholder="اسم المستخدم" required>
+            <i class='bx bxs-user-circle'></i>
+        </div>
+
+        <div class="input-login">
+            <input type="password" id="login-password" placeholder="كلمة السر" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+        
+        <div class="remember-login">
+            <label><input type="checkbox"> تذكرني</label>
+            <a href="#">نسيت كلمة السر ؟</a>
+        </div>
+
+        <p id="login-message" style="text-align: center; margin-top: 10px; font-weight: bold;"></p>
+
+        <button type="submit" class="btn">تسجيل الدخول</button>
+        <div class="register">
+            <p>ليس لديك حساب ؟<a href="register.html"> <b> تسجيل</b></a></p>
+        </div>
+    </form>
+</div>
+</div>
+
+
+
+
+
+
+
+<script src="./assets/js/home.js"></script>
 <script src="./assets/js/main.js"></script>
+
 
   </body>
 </html>

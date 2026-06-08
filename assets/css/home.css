@@ -73,8 +73,10 @@
 }
 .card-title,
 .card-description,
-.card-details {
-    margin: 14px;
+.card-details , .card-role {
+    margin-inline: 9px;
+    margin-bottom: 7px;
+    margin-top: 7px;
 }
 .card-description a {
   color: var(--purple-7);

@@ -1,7 +1,7 @@
 /* projects */
 
  function fetchProjects() {
-   fetch("////.limit[6]")
+   fetch("")
     .then((res) => res.json())
      .then((res) => {
       const projectsData = res.projects;
