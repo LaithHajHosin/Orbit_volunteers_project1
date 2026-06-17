@@ -1,19 +1,11 @@
-function loadPosts() {
-fetch("data.json")
+/* function loadPosts() {
+fetch("http://orbitvolunteers.atwebpages.com/blogs")
     .then(res => res.json())
     .then(data => {
-    const posts = data.posts || [];
-    renderPosts(posts);
+    const posts = data|| [];
+    renderPosts(data);
     })
     .catch(err => console.error(err));
 }
 loadPosts();
- 
-/* hamburger */
-  const hamburger = document.getElementById('hamburger');
-  const sideMenu = document.getElementById('sideMenu');
-
-  hamburger.addEventListener('click', () => {
-    sideMenu.classList.toggle('open');
-    hamburger.classList.toggle('open');
-  });
+ */
