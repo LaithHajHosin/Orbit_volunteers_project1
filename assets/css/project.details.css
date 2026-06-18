@@ -356,3 +356,59 @@
 
     transform: translateY(-2px);
 }
+@media(max-width:991px){
+    .details-hero{
+        flex-direction: column;
+    }
+
+    .gallery-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+} 
+@media(max-width:768px){
+    .descriptions-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .project-details-page{
+        padding: 20px;
+    }
+}
+@media(max-width:480px){
+    .details-stats{
+        flex-direction: column;
+    }
+
+    .join-btn{
+        width: 100%;
+    }
+}
+.volunteer-avatar{
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #7b2ff7;
+    color: white;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.12);
+
+    transition: .3s;
+}
+
+.volunteer-avatar:hover{
+    transform: translateY(-5px);
+}
