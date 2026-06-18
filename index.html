@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -24,105 +28,30 @@
   <body>
     <main>
       <header>
-        
-       <main-navbar></main-navbar>
+        <main-navbar></main-navbar>
 
         <section class="hero">
-          <div class="hero-img-container">
-            <img class="hero-img" src="./assets/images/test4.jpg" alt="" >
-          </div>
-          <div class="hero-text">
-            <p class="hero-title">+100 متطوع</p>
-            <p>مشروع +500</p>
-          </div>
+      
           <div class="home-actions hero-actions">
-            <button class="home-bottons"><a href="./login.html">تطوع الآن</a></button>
-            <button class="home-bottons"><a href="./projects.html">اكتشف المشاريع</a></button>
+            <button id="open-register-btn" class="home-bottons">
+              تطوع الآن
+            </button>
+            <button class="home-bottons">
+              <a href="./allProjects.html">اكتشف المشاريع</a>
+            </button>
           </div>
         </section>
       </header>
 
-      <section  id="projects" class="projects" >
+      <section id="projects" class="projects">
         <h1 class="home-section-title">المشاريع</h1>
         <div class="projects-container fcb">
-          <div class="project-card">
-            <div class="card-container-img">
-              <img
-                class="card-image"
-                src="./assets/images/test.jpg"
-                alt="Project Image"
-              />
-            </div>
-            <h3 class="card-title">مشروع 1</h3>
-            <p class="card-description">
-              هذا وصف موجز للمشروع 1. يهدف هذا المشروع إلى تحقيق أهداف محددة من
-              خلال تنفيذ خطة عمل فعالة....
-              <a href="./project.details.html">اقرأ المزيد</a>
-            </p>
-           
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 120</span>
-        <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
-        <span><i class="fa-solid fa-layer-group"></i> Web</span>
-      </p>
-            <div class="card-cta">
-              <button class="home-bottons">انضم للمشروع</button>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="card-container-img">
-              <img
-                class="card-image"
-                src="./assets/images/test.jpg"
-                alt="Project Image"
-              />
-            </div>
-            <h3 class="card-title">مشروع2</h3>
-            <p class="card-description">
-              هذا وصف موجز للمشروع 2. يهدف هذا المشروع إلى تحقيق أهداف محددة من
-              خلال تنفيذ خطة عمل فعالة....
-              <a href="./project.details.html">اقرأ المزيد</a>
-            </p>
-           
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 120</span>
-        <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
-        <span><i class="fa-solid fa-layer-group"></i> Web</span>
-      </p>
-            <div class="card-cta">
-              <button class="home-bottons">انضم للمشروع</button>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="card-container-img">
-              <img
-                class="card-image"
-                src="./assets/images/test.jpg"
-                alt="Project Image"
-              />
-            </div>
-            <h3 class="card-title">مشروع 3</h3>
-            <p class="card-description">
-              هذا وصف موجز للمشروع3. يهدف هذا المشروع إلى تحقيق أهداف محددة من
-              خلال تنفيذ خطة عمل فعالة....
-              <a href="./project.details.html">اقرأ المزيد</a>
-            </p>
-            
-      <p class="card-details">
-        <span><i class="fa-solid fa-users"></i> 12 متطوع</span>
-        <span><i class="fa-solid fa-eye"></i> 120</span>
-        <span><i class="fa-solid fa-clock"></i> قيد التحضير</span>
-        <span><i class="fa-solid fa-layer-group"></i> Web</span>
-      </p>
-            <div class="card-cta">
-              <button id="joinToProject" class="home-bottons">انضم للمشروع</button>
-            </div>
-          </div>
+          <div class="project-card"></div>
         </div>
         <div class="all-projects">
-          <button class="home-bottons"><a href="./projects.html">استكشف المزيد</a></button>
+          <button class="home-bottons">
+            <a href="./allProjects.html">استكشف المزيد</a>
+          </button>
         </div>
       </section>
 
@@ -132,258 +61,162 @@
             <h2 class="section-title">المقالات</h2>
             <span class="section-title-bg">حصري</span>
           </div>
-          <div class="articles-grid">
-            <div class="article-card">
-              <div class="card-img">
-                <img src="./assets/images/ai.webp" alt="الذكاء الاصطناعي" />
-              </div>
-              <div class="card-content">
-                <span class="card-category">الذكاء الاصطناعي</span>
-                <h3 class="card-title">
-                  <a href="article.html?id=1"
-                    >كيف تغير نماذج اللغة الكبيرة (LLMs) مستقبل البرمجة؟</a
-                  >
-                </h3>
-                <p class="card-description">
-                  هذا وصف موجز للمقالة. يهدف هذا المقال إلى شرح تأثير LLMs على
-                  البرمجة...
-                  <a href="article.html" class="read-more-link">اقرأ المزيد</a>
-                </p>
-                <div class="card-footer">
-                  <div class="volunteer-info">
-                    <i class="fas fa-user-circle"></i>
-                    <span>أدهم</span>
-                  </div>
-                  <div class="post-meta">
-                    <span
-                      ><i class="far fa-calendar-alt"></i> 10 يناير 2026</span
-                    >
-                    <span><i class="far fa-clock"></i> 6 دقائق</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="article-card">
-              <div class="card-img">
-                <img
-                  src="./assets/images/cyberscurity.webp"
-                  alt="الأمن السيبراني"
-                />
-              </div>
-              <div class="card-content">
-                <span class="card-category">الأمن السيبراني</span>
-                <h3 class="card-title">
-                  <a href="article.html?id=2"
-                    >أحدث هجمات الفدية (Ransomware) وطرق الحماية منها</a
-                  >
-                </h3>
-                <p class="card-description">
-                  شرح لأحدث هجمات الفدية وأساليب الحماية الحديثة...
-                  <a href="article.html" class="read-more-link">اقرأ المزيد</a>
-                </p>
-                <div class="card-footer">
-                  <div class="volunteer-info">
-                    <i class="fas fa-user-circle"></i>
-                    <span>حميد</span>
-                  </div>
-                  <div class="post-meta">
-                    <span
-                      ><i class="far fa-calendar-alt"></i> 8 يناير 2026</span
-                    >
-                    <span><i class="far fa-clock"></i> 5 دقائق</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="article-card">
-              <div class="card-img">
-                <img src="./assets/images/it.webp" alt="Quantum" />
-              </div>
-              <div class="card-content">
-                <span class="card-category">تقنيات متقدمة</span>
-                <h3 class="card-title">
-                  <a href="article.html?id=3"
-                    >الحوسبة الكمومية: هل تنهي التشفير كما نعرفه؟</a
-                  >
-                </h3>
-                <p class="card-description">
-                  نظرة على تأثير الحوسبة الكمومية على أنظمة التشفير الحالية...
-                  <a href="article.html" class="read-more-link">اقرأ المزيد</a>
-                </p>
-                <div class="card-footer">
-                  <div class="volunteer-info">
-                    <i class="fas fa-user-circle"></i>
-                    <span>راما</span>
-                  </div>
-                  <div class="post-meta">
-                    <span
-                      ><i class="far fa-calendar-alt"></i> 5 يناير 2026</span
-                    >
-                    <span><i class="far fa-clock"></i> 8 دقائق</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="article-card">
-              <div class="card-img">
-                <img src="./assets/images/deepfake.webp" alt="Deepfake" />
-              </div>
-              <div class="card-content">
-                <span class="card-category">أمن الذكاء الاصطناعي</span>
-                <h3 class="card-title">
-                  <a href="article.html?id=4"
-                    >التزييف العميق (Deepfake): تهديد رقمي وكيف تكتشفه</a
-                  >
-                </h3>
-                <p class="card-description">
-                  كيف تعمل تقنيات التزييف العميق وطرق اكتشافها...
-                  <a href="article.html" class="read-more-link">اقرأ المزيد</a>
-                </p>
-                <div class="card-footer">
-                  <div class="volunteer-info">
-                    <i class="fas fa-user-circle"></i>
-                    <span>حلا</span>
-                  </div>
-                  <div class="post-meta">
-                    <span
-                      ><i class="far fa-calendar-alt"></i> 2 يناير 2026</span
-                    >
-                    <span><i class="far fa-clock"></i> 7 دقائق</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="articles-grid"></div>
+        </div>
+        <div class="all-projects">
+          <button class="home-bottons">
+            <a href="./allBlogs.html">استكشف المزيد</a>
+          </button>
         </div>
       </section>
-
 
       <section id="about-us" class="about-us">
         <h1 class="home-section-title">أهدافنا</h1>
         <div class="about-us-container fcb">
-          <div class="about-us-card">
-            <p class="about-us-disc"><i class="cta-text-icon fa-brands fa-facebook-f"></i
-                ></p>
-            <h3 class="about-us-disc">اهدافنا</h3>
-            <p class="about-us-disc">اهدافنا اهدافنا اهدافنا اهدافنا</p>
-          </div>
-          <div class="about-us-card">
-            <p class="about-us-disc" ><i class="cta-text-icon fa-brands fa-facebook-f"></i
-                ></p>
-            <h3 class="about-us-disc">اهدافنا</h3>
-            <p class="about-us-disc">اهدافنا اهدافنا اهدافنا اهدافنا</p>
-          </div>
-          <div class="about-us-card">
-            <p class="about-us-disc"><i class="cta-text-icon fa-brands fa-facebook-f"></i
-                ></p>
-            <h3 class="about-us-disc">اهدافنا</h3>
-            <p class="about-us-disc">اهدافنا اهدافنا اهدافنا اهدافنا</p>
-          </div>
-          <div class="about-us-card">
-            <p class="about-us-disc"><i class="cta-text-icon fa-brands fa-facebook-f"></i
-                ></p>
-            <h3 class="about-us-disc">اهدافنا</h3>
-            <p class="about-us-disc">اهدافنا اهدافنا اهدافنا اهدافنا</p>
-          </div>
+      
         </div>
       </section>
-
-
 
       <section id="our-team" class="our-team">
-        <h1 class="home-section-title">فريقنا</h1>
-        <div class="team-container fcb">
-         <div class="project-card">
-            <div class="card-container-img">
-              <img
-                class="card-image"
-                src="./assets/images/test.jpg"
-                alt="Project Image"
-              />
-            </div>
-            <h3 class="card-title">متطوع1</h3>
-             <h4 class="card-title">اختصاص</h4>
-            <p class="card-description">
-              هذا وصف موجز للمشروع 2. يهدف هذا المشروع إلى تحقيق أهداف محددة من
-              خلال تنفيذ خطة عمل فعالة.
-            </p>
-             <p class="card-details">
-                 <p class="card-details">
-                <a href="#">
-                 github  </a> |
-                <a href="#">
-                 linkedin  </a> |
-                <a href="#"
-                  > facebook</a>
-            </p>
-            </p>
-          </div>
-          <div class="team-card">
-            <div class="card-container-img">
-              <img
-                class="card-image"
-                src="./assets/images/test.jpg"
-                alt="Project Image"
-              />
-            </div>
-            <h3 class="card-title">متطوع2</h3>
-             <h4 class="card-title">اختصاص</h4>
-            <p class="card-description">
-              هذا وصف موجز للمشروع 2. يهدف هذا المشروع إلى تحقيق أهداف محددة من
-              خلال تنفيذ خطة عمل فعالة.
-            </p>
-             <p class="card-details">
-                 <p class="card-details">
-                <a href="#">
-                 github  </a> |
-                <a href="#">
-                 linkedin  </a> |
-                <a href="#"
-                  > facebook</a>
-            </p>
-            </p>
-          </div>
-          <div class="team-card">
-            <div class="card-container-img">
-              <img
-                class="card-image"
-                src="./assets/images/test.jpg"
-                alt="Project Image"
-              />
-            </div>
-            <h3 class="card-title"> متطوع3</h3>
-             <h4 class="card-title">اختصاص</h4>
-            <p class="card-description">
-              هذا وصف موجز للمشروع3. يهدف هذا المشروع إلى تحقيق أهداف محددة من
-              خلال تنفيذ خطة عمل فعالة.
-            </p>
-            <p class="card-details">
-                <p class="card-details">
-                <a href="#">
-                 github  </a> |
-                <a href="#">
-                 linkedin  </a> |
-                <a href="#"
-                  > facebook</a>
-            </p>
-            </p>
-          </div>
+        <h1 class="home-section-title">فرقنا</h1>
+
+        <div id="teams-grid" class="teams-grid"></div>
+        <div class="all-projects">
+          <button class="home-bottons">
+            <a href="./allvolunteers.html">استكشف المزيد</a>
+          </button>
         </div>
       </section>
+
       <section class="join-now">
         <h2 class="join-title">انضم الآن</h2>
         <div class="home-actions join-actions">
-             <button class="home-bottons"><a  href="">ارسل رسالة</a></button>
-            <button class="home-bottons"><a href="./register.html">انشىء حساب</a></button>
-          </div>
+          <button class="home-bottons">
+            <a href="./contact us.html">ارسل رسالة</a>
+          </button>
+          <button class="home-bottons" id='open-register-btn'>
+            انشىء حساب
+          </button>
+        </div>
       </section>
-     <main-footer></main-footer>
+
+
+      
+      <main-footer></main-footer>
     </main>
 
+    <!-- forms -->
+    <div id="login-modal" class="modal-overlay">
+      <div class="page-login">
+        <form id="login-form">
+          <h1>تسجيل الدخول</h1>
+          <div class="input-login">
+            <input
+              type="email"
+              id="email"
+              placeholder="البريد الإلكتروني"
+              required
+            />
+            <i class="bx bxs-user-circle"></i>
+          </div>
+          <div class="input-login">
+            <input
+              type="password"
+              id="login-password"
+              placeholder="كلمة السر"
+              required
+            />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="remember-login">
+            <label><input type="checkbox" /> تذكرني</label>
+            <a href="#">نسيت كلمة السر ؟</a>
+          </div>
+          <p
+            id="login-message"
+            style="text-align: center; margin-top: 10px; font-weight: bold"
+          ></p>
+          <button type="submit" class="btn">تسجيل الدخول</button>
+          <div class="register">
+            <p>
+              ليس لديك حساب ؟
+              <a href="#" id="go-to-register"><b>تسجيل حساب جديد</b></a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
 
-<script src="./assets/js/main.js"></script>
+    <div id="register-modal" class="modal-overlay">
+      <div class="page-login">
+        <form id="register-form">
+          <h1>إنشاء حساب جديد</h1>
 
+          <div class="input-login">
+            <input
+              type="text"
+              id="reg-username"
+              placeholder="اسم المستخدم (Username)"
+              required
+            />
+            <i class="bx bxs-user"></i>
+          </div>
+
+          <div class="input-login" style="display: flex; gap: 10px">
+            <input
+              type="text"
+              id="reg-firstname"
+              placeholder="الاسم الأول"
+              required
+            />
+            <input
+              type="text"
+              id="reg-lastname"
+              placeholder="الكنية / العائلة"
+              required
+            />
+          </div>
+
+          <div class="input-login">
+            <input
+              type="email"
+              id="reg-email"
+              placeholder="البريد الإلكتروني"
+              required
+            />
+            <i class="bx bxs-envelope"></i>
+          </div>
+
+          <div class="input-login">
+            <input
+              type="password"
+              id="reg-password"
+              placeholder="كلمة السر (6 أحرف على الأقل)"
+              minlength="6"
+              required
+            />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+
+          <p
+            id="register-message"
+            style="text-align: center; margin-top: 10px; font-weight: bold"
+          ></p>
+
+          <button type="submit" class="btn">إنشاء الحساب</button>
+
+          <div class="register">
+            <p>
+              لديك حساب بالفعل؟
+              <a href="#" id="go-to-login"><b>تسجيل الدخول</b></a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/projects.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

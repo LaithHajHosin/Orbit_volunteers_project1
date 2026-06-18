@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins, sans-serif";
 }
 
 body{
@@ -16,7 +15,7 @@ body{
 }
 .page-login{
     width: 420px;
-    background-color: transparent;
+  background-color: var(--purple-3);
     border: 2px solid  var(--purple-10); 
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
