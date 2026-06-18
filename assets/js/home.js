@@ -122,7 +122,7 @@ function appendNewitem(
       </p>
       
       <p class="card-details">
-        <span><i class="fa-solid fa-users" id=${team_id}></i> ${displayTeam}</span>
+        <span><i class="fa-solid fa-users" ></i><a href="./team.profile.html?id=${team_id}"> ${displayTeam}</a></span>
         <span><i class="fa-solid fa-clock"></i> ${status}</span>
         <span><i class="fa-solid fa-eye"></i> ${view_count}</span>
       </p>
@@ -197,7 +197,7 @@ function appendNewBlogitem(
   const blogsContainer = document.querySelector(".articles-grid");
   if (!blogsContainer) return;
 
-   const imageUrl = image1_url ? image1_url : "./assets/images/test.jpg";
+   const imageUrl = image1_url == null ? image1_url : "./assets/images/test.jpg";
    
   blogsContainer.innerHTML += `
 
@@ -216,9 +216,10 @@ function appendNewBlogitem(
                   <a href="./blog.details.html?id=${id}" class="read-more-link">اقرأ المزيد</a>
                 </p>
                 <div class="card-footer">
-                  <div class="volunteer-info" id=${author_id}>
+                  <div class="volunteer-info" ><a href="./profile.html?id=${author_id}">
                     <i class="fas fa-user-circle"></i>
                     <span>${author_username}</span>
+                    </a>
                   </div>
                   <div class="post-meta">
                     <span
@@ -266,21 +267,22 @@ function fetchGoals() {
           goalsData.description1,
           goalsData.description2,
           goalsData.title,
+          goalsData.icon_text,
         );
       });
     })
     .catch((err) => console.error("Fetch error:", err)); 
 }
 
-function appendGoalsitem(id, category_id, parent_id, description1, description2, title) {
+function appendGoalsitem(id, category_id, parent_id, description1, description2, title , icon_text) {
   const containerGoals = document.querySelector(".about-us-container");
   if (!containerGoals) return; 
 
 
   containerGoals.innerHTML += `
      <div class="about-us-card" id=${id}-${category_id}-${parent_id}>
-            <p class="about-us-disc">
-              <i class="cta-text-icon fa-brands fa-facebook-f"></i>
+            <p class="about-us-disc-icon">
+              ${icon_text}
             </p>
             <h3 class="about-us-disc">${title}</h3>
             <p class="about-us-disc">${description1}</p>
@@ -395,7 +397,6 @@ function appendNewMemberItem(
   username,
   firstname,
   lastname,
-
   photo_url,
   bio,
 ) {

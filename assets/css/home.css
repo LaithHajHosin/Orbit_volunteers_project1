@@ -124,12 +124,14 @@
   width: 409px;
   background-color: var(--purple-10);
   box-shadow: 0px 0px 3px -1px var(--purple-9);
-  padding: 22px;
   text-align: center;
   color: var(--purple-3);
   height: 258px;
 }
-.about-us-disc {
+.about-us-disc-icon {
+ font-size: 39px;
+}
+.about-us-disc , .about-us-disc-icon {
   margin-bottom: 10px;
 }
 .about-us-disc .cta-text-icon {
@@ -188,8 +190,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: var(--purple-1);
-  color: var(--purple-10);
+     background-color: var(--purple-10);
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 13px;
