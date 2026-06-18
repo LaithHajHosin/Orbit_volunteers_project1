@@ -387,3 +387,28 @@
         width: 100%;
     }
 }
+.volunteer-avatar{
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #7b2ff7;
+    color: white;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.12);
+
+    transition: .3s;
+}
+
+.volunteer-avatar:hover{
+    transform: translateY(-5px);
+}
