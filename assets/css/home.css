@@ -141,7 +141,11 @@
 /* //////// */
 /* our team */
 
-.teams-grid {
+.our-teams{
+      padding-top: 70px;
+      padding-bottom: 70px;
+}
+.teams-grid  , .allteams-grid{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(319px, 1fr));
   gap: 25px;

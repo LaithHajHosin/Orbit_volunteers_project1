@@ -299,7 +299,7 @@ fetchGoals();
 
 
 
-/* team  */
+/* teams  */
 const backendTeamsUrl = "http://orbitvolunteers.atwebpages.com/teams?limit=3";
 const proxyTeamsUrl = `https://corsproxy.io/?${encodeURIComponent(backendTeamsUrl)}`;
 

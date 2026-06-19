@@ -224,6 +224,7 @@ class MainFooter extends HTMLElement {
                 <span>0000000000</span>
               </div>
             </div>
+            <a href="./contact us.html">
             <div class="footer-cta-item">
               <i class="cta-text-icon far fa-envelope-open"></i>
               <div class="cta-text">
@@ -231,6 +232,7 @@ class MainFooter extends HTMLElement {
                 <span>mail@info.com</span>
               </div>
             </div>
+                             </a>
           </div>
         
           <div class="footer-content">
@@ -252,12 +254,12 @@ class MainFooter extends HTMLElement {
                 <h3>روابط مفيدة</h3>
               </div>
               <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">المشاريع</a></li>
-                <li><a href="#">تواصل معنا</a></li>
-                <li><a href="#">فريقنا</a></li>
-                <li><a href="#">المقالات</a></li>
+                <li><a href="./index.html">الرئيسية</a></li>
+                 <li><a href="./allProjects.html">المشاريع</a></li>
+                <li><a href="./allBlogs.html">المقالات</a></li>
+                <li><a href="#about-us">من نحن</a></li>
+                 <li><a href="#our-team">فريقنا</a></li>
+                <li><a href="./contact us.html">تواصل معنا</a></li>
                 <li><a href="#">آخر الاخبار</a></li>
               </ul>
             </div>
@@ -267,8 +269,8 @@ class MainFooter extends HTMLElement {
               </div>
               <ul>
                 <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">المشاريع</a></li>
+                <li><a href="#">ترخيص الشركة</a></li>
+                <li><a href="#">سياسة الخصوصية</a></li>
                 <li><a href="#">تواصل معنا</a></li>
                 <li><a href="#">فريقنا</a></li>
                 <li><a href="#">المقالات</a></li>
