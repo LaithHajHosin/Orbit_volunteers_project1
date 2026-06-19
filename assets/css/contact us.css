@@ -26,7 +26,7 @@ body{
 .contact-page h3{
     font-size: 36px;
     text-align: right;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-right: 20px;
     color: var(--purple-10);
     
@@ -86,7 +86,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     margin-right: 50%;
-    top: 32%;
+    top: 35%;
    }
    .pcontact .contact{
       color: #2a004f;
