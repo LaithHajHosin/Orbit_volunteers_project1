@@ -1,5 +1,7 @@
 /* All Projects */
 
+let allProjectsData = [];
+
 const backendAllProjectsUrl =
   "http://orbitvolunteers.atwebpages.com/projects";
 
@@ -15,9 +17,12 @@ function fetchAllProjects() {
       return res.json();
     })
     .then((res) => {
-      const allProjectsData = res.data;
+
+      allProjectsData = res.data;
 
       if (!allProjectsData) return;
+
+      createCategoryFilters();
 
       const allProjectsContainer =
         document.querySelector(".allprojects-container");
@@ -63,17 +68,21 @@ function appendNewAllProjectsItem(
   if (!allProjectsContainer) return;
 
   const imageUrl =
-    image1_url ?
-    image1_url :
-    "./assets/images/test.jpg";
+    image1_url
+      ? image1_url
+      : "./assets/images/test.jpg";
 
   const displayTeam =
-    team_name ?
-    team_name :
-    "متطوع مستقل";
+    team_name
+      ? team_name
+      : "متطوع مستقل";
 
   allProjectsContainer.innerHTML += `
-    <div class="project-card" id="${id}">
+    <div
+      class="project-card"
+      id="${id}"
+      data-category="${category_name}"
+    >
 
       <div class="card-container-img">
         <img class="card-image" src="${imageUrl}" />
@@ -83,7 +92,7 @@ function appendNewAllProjectsItem(
 
         <h3 class="card-title">
           ${title}
-          <span class="category-title" id="${category_id}">
+          <span class="category-title">
             (${category_name})
           </span>
         </h3>
@@ -124,6 +133,64 @@ function appendNewAllProjectsItem(
 
     </div>
   `;
+}
+
+function createCategoryFilters() {
+
+  const filtersContainer =
+    document.querySelector(".filters-right");
+
+  if (!filtersContainer) return;
+
+  const categories = [
+    ...new Set(
+      allProjectsData.map(
+        (project) => project.category_name
+      )
+    ),
+  ];
+
+  filtersContainer.innerHTML = `
+    <button
+      class="project-button"
+      onclick="filterProjects('all')"
+    >
+      عرض الجميع
+    </button>
+  `;
+
+  categories.forEach((category) => {
+
+    filtersContainer.innerHTML += `
+      <button
+        class="project-button"
+        onclick="filterProjects('${category}')"
+      >
+        ${category}
+      </button>
+    `;
+  });
+}
+
+function filterProjects(category) {
+
+  const cards =
+    document.querySelectorAll(".project-card");
+
+  cards.forEach((card) => {
+
+    const cardCategory =
+      card.dataset.category;
+
+    if (
+      category === "all" ||
+      cardCategory === category
+    ) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
 }
 
 fetchAllProjects();
