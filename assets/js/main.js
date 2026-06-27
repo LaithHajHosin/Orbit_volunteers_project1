@@ -94,9 +94,9 @@ class MainNavbar extends HTMLElement {
         </div>
         <ul class="home-menu fca">
           
-          <li><a href="./contact us.html">${dashboard}</a></li>
-          <li><a href="./contact us.html">${myProfile}</a></li>
-          <li><a href="./contact us.html">تواصل معنا</a></li>
+          <li><a href="./contactUs.html">${dashboard}</a></li>
+          <li><a href="./contactUs.html">${myProfile}</a></li>
+          <li><a href="./contactUs.html">تواصل معنا</a></li>
           <li><a href="#our-team">فريقنا</a></li>
           <li><a href="#about-us">من نحن</a></li>
           <li><a href="#articles-section">المقالات</a></li>
@@ -122,10 +122,10 @@ class MainNavbar extends HTMLElement {
 <li><a href="#articles-section">المقالات</a></li>
 <li><a href="#about-us">من نحن</a></li>
  <li><a href="#our-team">فريقنا</a></li>
-<li><a href="./contact us.html">تواصل معنا</a></li>
+<li><a href="./contactUs.html">تواصل معنا</a></li>
  
-          <li><a href="./contact us.html">${dashboard}</a></li>
-          <li><a href="./contact us.html">${myProfile}</a></li>
+          <li><a href="./contactUs.html">${dashboard}</a></li>
+          <li><a href="./contactUs.html">${myProfile}</a></li>
       
           <li>
             <div class="home-actions">
@@ -224,7 +224,7 @@ class MainFooter extends HTMLElement {
                 <span>0000000000</span>
               </div>
             </div>
-            <a href="./contact us.html">
+            <a href="./contactUs.html">
             <div class="footer-cta-item">
               <i class="cta-text-icon far fa-envelope-open"></i>
               <div class="cta-text">
@@ -259,7 +259,7 @@ class MainFooter extends HTMLElement {
                 <li><a href="./allBlogs.html">المقالات</a></li>
                 <li><a href="#about-us">من نحن</a></li>
                  <li><a href="#our-team">فريقنا</a></li>
-                <li><a href="./contact us.html">تواصل معنا</a></li>
+                <li><a href="./contactUs.html">تواصل معنا</a></li>
                 <li><a href="#">آخر الاخبار</a></li>
               </ul>
             </div>
