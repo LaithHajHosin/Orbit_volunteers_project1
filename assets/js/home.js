@@ -198,6 +198,8 @@ function appendNewBlogitem(
   if (!blogsContainer) return;
 
    const imageUrl = image1_url == null ? image1_url : "./assets/images/test.jpg";
+   const blogTitle = title === null ? title : "lorem lorem";
+   const blogDescription1 = description1 === null ? description1 : "lorem lorem lorem lorem lorem lorem";
    
   blogsContainer.innerHTML += `
 
@@ -209,10 +211,10 @@ function appendNewBlogitem(
                 <span class="card-category" id=${category_id}>${category_name}</span>
                 <h3 class="card-title">
                   <a href=${url}
-                    >${title}</a>
+                    >${blogTitle}</a>
                 </h3>
                 <p class="card-description">
-                 ${description1}
+                 ${blogDescription1}
                   <a href="./blog.details.html?id=${id}" class="read-more-link">اقرأ المزيد</a>
                 </p>
                 <div class="card-footer">

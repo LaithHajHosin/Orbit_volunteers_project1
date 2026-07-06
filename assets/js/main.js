@@ -21,13 +21,25 @@ document.addEventListener("DOMContentLoaded", () => {
         return res.json();
       })
       .then((user) => {
+        // حماية الـ Role: نأخذ الـ role الحالي المخزن مسبقاً أولاً لحمايته من التلاشي
+        const oldDataString = localStorage.getItem("userData");
+        let currentRole = "user";
+        if (oldDataString) {
+          try { currentRole = JSON.parse(oldDataString).role || "user"; } catch(e){}
+        }
+
+        // إذا جاء الـ role من السيرفر بشكل كائن (كما في برمجيات Headless CMS) أو نص نلتقطه، وإلا نحتفظ بالقديم
+        const updatedRole = user.role?.name || user.role || currentRole;
+        
+        user.role = updatedRole; // نضمن تثبيت الـ role الصحيح
         localStorage.setItem("userData", JSON.stringify(user));
       })
       .catch((err) => {
         if (err.message === "Session expired") {
           console.warn("جلسة الدخول منتهية، سيتم تسجيل الخروج.");
           localStorage.clear();
-          window.location.reload();
+          // التوجيه لصفحة الـ Guest الرئيسية
+          window.location.href = "./index.html"; 
         } else {
           console.error("فشل الفحص الدوري بسبب الشبكة أو الـ CORS:", err);
         }
@@ -46,7 +58,6 @@ class MainNavbar extends HTMLElement {
     if (isLoggedIn && userDataString) {
       try {
         const userData = JSON.parse(userDataString);
-
         userRole = userData.role;
       } catch (e) {
         console.error("خطأ في قراءة بيانات المستخدم من الـ LocalStorage");
@@ -55,8 +66,7 @@ class MainNavbar extends HTMLElement {
 
     let desktopActions = "";
     let mobileActions = "";
-    let dashboard = "";
-    let myProfile = "";
+    let centerMenuLinks = ""; // لتجميع الروابط الديناميكية في منتصف الناف بار بشكل نظيف
 
     if (!isLoggedIn) {
       desktopActions = `
@@ -68,23 +78,13 @@ class MainNavbar extends HTMLElement {
         <button id="open-register-btn-mobile" class="home-bottons">انضم الآن</button>
       `;
     } else if (userRole === "admin") {
-      dashboard = `<li><a href="./dashboard.html">لوحة التحكم</a></li>`;
-      desktopActions = `
-        <button id="logout-btn" class="home-bottons">تسجيل الخروج</button>
-      `;
-      dashboard = `<li><a href="./dashboard.html">لوحة التحكم</a></li>`;
-      mobileActions = `
-        <button id="logout-btn-mobile" class="home-bottons">تسجيل الخروج</button>
-      `;
+      centerMenuLinks = `<li><a href="./Dashboard/Dashboard.html">لوحة التحكم</a></li>`;
+      desktopActions = `<button id="logout-btn" class="home-bottons">تسجيل الخروج</button>`;
+      mobileActions = `<button id="logout-btn-mobile" class="home-bottons">تسجيل الخروج</button>`;
     } else {
-      myProfile = `<li><a href="./profile.html">ملفي الشخصي</a></li>`;
-      desktopActions = `
-        <button id="logout-btn" class="home-bottons">تسجيل الخروج</button>
-      `;
-      myProfile = `<li><a href="./profile.html">ملفي الشخصي</a></li>`;
-      mobileActions = `
-        <button id="logout-btn-mobile" class="home-bottons">تسجيل الخروج</button>
-      `;
+      centerMenuLinks = `<li><a href="./profile.html">ملفي الشخصي</a></li>`;
+      desktopActions = `<button id="logout-btn" class="home-bottons">تسجيل الخروج</button>`;
+      mobileActions = `<button id="logout-btn-mobile" class="home-bottons">تسجيل الخروج</button>`;
     }
 
     this.innerHTML = `
@@ -93,9 +93,7 @@ class MainNavbar extends HTMLElement {
           ${desktopActions}
         </div>
         <ul class="home-menu fca">
-          
-          <li><a href="./contact us.html">${dashboard}</a></li>
-          <li><a href="./contact us.html">${myProfile}</a></li>
+          ${centerMenuLinks}
           <li><a href="./contact us.html">تواصل معنا</a></li>
           <li><a href="#our-team">فريقنا</a></li>
           <li><a href="#about-us">من نحن</a></li>
@@ -117,16 +115,13 @@ class MainNavbar extends HTMLElement {
 
       <div class="side-menu" id="sideMenu">
         <ul>
- <li><a href="./index.html">الرئيسية</a></li>
- <li><a href="#projects">المشاريع</a></li>
-<li><a href="#articles-section">المقالات</a></li>
-<li><a href="#about-us">من نحن</a></li>
- <li><a href="#our-team">فريقنا</a></li>
-<li><a href="./contact us.html">تواصل معنا</a></li>
- 
-          <li><a href="./contact us.html">${dashboard}</a></li>
-          <li><a href="./contact us.html">${myProfile}</a></li>
-      
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="#projects">المشاريع</a></li>
+          <li><a href="#articles-section">المقالات</a></li>
+          <li><a href="#about-us">من نحن</a></li>
+          <li><a href="#our-team">فريقنا</a></li>
+          <li><a href="./contact us.html">تواصل معنا</a></li>
+          ${centerMenuLinks}
           <li>
             <div class="home-actions">
               ${mobileActions}
@@ -136,6 +131,7 @@ class MainNavbar extends HTMLElement {
       </div>
     `;
 
+    // تفعيل الهامبرغر للموبايل
     const hamburger = this.querySelector("#hamburger");
     const sideMenu = this.querySelector("#sideMenu");
     if (hamburger && sideMenu) {
@@ -152,16 +148,20 @@ class MainNavbar extends HTMLElement {
       }
     };
 
+    // معالجة تسجيل الخروج والتوجه لصفحة الـ Guest
     const logoutBtn = this.querySelector("#logout-btn");
     const logoutBtnMobile = this.querySelector("#logout-btn-mobile");
+    
     const handleLogout = () => {
       localStorage.clear();
-      window.location.reload();
+      // التوجيه فوراً للرئيسية ليعود كزائر غيست
+      window.location.href = "./index.html"; 
     };
-    if (logoutBtn) logoutBtn.addEventListener("click", handleLogout);
-    if (logoutBtnMobile)
-      logoutBtnMobile.addEventListener("click", handleLogout);
 
+    if (logoutBtn) logoutBtn.addEventListener("click", handleLogout);
+    if (logoutBtnMobile) logoutBtnMobile.addEventListener("click", handleLogout);
+
+    // تفعيل فتح المودال الخاص بالدخول والتسجيل
     const openLoginBtn = this.querySelector("#open-login-btn");
     const openLoginBtnMobile = this.querySelector("#open-login-btn-mobile");
     const setupLoginClick = (btn) => {
@@ -181,9 +181,7 @@ class MainNavbar extends HTMLElement {
     setupLoginClick(openLoginBtnMobile);
 
     const openRegisterBtn = this.querySelector("#open-register-btn");
-    const openRegisterBtnMobile = this.querySelector(
-      "#open-register-btn-mobile",
-    );
+    const openRegisterBtnMobile = this.querySelector("#open-register-btn-mobile");
     const setupRegisterClick = (btn) => {
       if (btn) {
         btn.addEventListener("click", () => {
