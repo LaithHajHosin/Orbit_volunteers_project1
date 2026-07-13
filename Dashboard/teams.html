@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="../assets/css/dashboard.css" />
     <link rel="stylesheet" href="../assets/css/home.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <!-- <link rel="stylesheet" href="../assets/css/blog.css" /> -->
     <link rel="stylesheet" href="../assets/css/login.css" />
-    <link rel="stylesheet" href="../Dashboard/teams.css" />
-  
+    <link rel="stylesheet" href="../assets/css/teamsDashboard.css" />
+ 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
@@ -25,7 +24,7 @@
           <div class="page-header">
             <h2>إدارة الفرق</h2>
           </div>
-        
+       
           <div class="card">
             <h3>الفرق الحالية</h3>
             <div class="table-responsive">
@@ -41,7 +40,7 @@
                   </tr>
                 </thead>
                 <tbody id="teams-tbody">
-                  </tbody>
+                </tbody>
               </table>
             </div>
           </div>
@@ -55,7 +54,7 @@
               <h3 id="form-title">إضافة فريق جديد</h3>
               <form id="team-form">
                 <input type="hidden" id="team-id" />
-              
+             
                 <div class="form-group">
                   <label for="team-name">اسم الفريق <span class="required">*</span></label>
                   <input type="text" id="team-name" required placeholder="مثال: فريق تطوير الواجهات" />
@@ -71,6 +70,11 @@
                     <label for="team-leader">معرّف قائد الفريق (User ID)</label>
                     <input type="number" id="team-leader" placeholder="مثال: 1" />
                   </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="team-members">معرّفات أعضاء الفريق (User IDs) <small>(فصل بين المعرفات بفاصلة مثل: 2, 5, 8)</small></label>
+                  <input type="text" id="team-members" placeholder="مثال: 2, 3, 4" />
                 </div>
 
                 <div class="form-group">
@@ -92,6 +96,6 @@
 
     <script src="../assets/js/sidebar.js"></script>
     <script src="../assets/js/dashboard.js"></script>
-    <script src="../Dashboard/teams.js"></script>
+    <script src="../assets/js/teamsDashboard.js"></script>
   </body>
 </html>
