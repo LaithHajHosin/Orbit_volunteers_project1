@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
 function loadArticle() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9e7737ad179e0be2faf21dd9a62e16c4c4a01eef
   if (!postId) {
     renderArticle(fallbackPost);
     loadComments(fallbackPost.id);   
@@ -91,7 +95,6 @@ function renderArticle(post) {
     </div>
   `;
 
-  // إضافة التاريخ والمشاهدات
   const likesDislikesDiv = document.querySelector(".likes-dislikes");
   if (likesDislikesDiv) {
     const statsSpan = document.createElement("div");
@@ -164,7 +167,6 @@ function bindAddComment(postId) {
       username: "زائر",
     };
 
-    // حاول الإرسال مباشرة أولاً (بدون بروكسي)
     const directUrl = `${BASE_URL}/comments`;
     fetch(directUrl, {
       method: "POST",
@@ -189,7 +191,7 @@ function bindAddComment(postId) {
   console.error("فشل الإرسال المباشر، نحاول مع وضع cors:", err);
   fetch(directUrl, {
     method: "POST",
-    mode: 'cors',           // أضف هذا
+    mode: 'cors',           
     headers: {
       "Content-Type": "application/json",
     },
@@ -197,7 +199,6 @@ function bindAddComment(postId) {
   })
   .then(res => res.json())
   .then(data => {
-    // نفس المعالجة السابقة
   })
   .catch(proxyErr => {
     console.error("فشل كلا المحاولتين:", proxyErr);

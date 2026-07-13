@@ -4,30 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>المقالات - لوحة التحكم</title>
+    
+
     <link rel="stylesheet" href="../assets/css/dashboard.css" />
     <link rel="stylesheet" href="../assets/css/home.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/blog.css" />
     <link rel="stylesheet" href="../assets/css/login.css" />
+    <link rel="stylesheet" href="../assets/css/blogDashboard.css" />
+    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
     <div class="dashboard-container">
@@ -36,15 +25,103 @@
       <main class="main-content">
         <div class="content-body">
           <div class="page-header">
-            <h2>إدارة المقالات</h2>
+            <h2>إدارة المقالات والتصنيفات</h2>
           </div>
+
+       
           <div class="card">
-            <p>هذه صفحة مستقلة تماماً لـ <strong>المقالات</strong>.</p>
+            <h3>المقالات</h3>
+            <div class="table-responsive">
+              <table class="data-table" id="blogs-table">
+                <thead>
+                  <tr>
+                    <th>المعرف</th>
+                    <th>العنوان</th>
+                    <th>التصنيف</th>
+                    <th>تاريخ النشر</th>
+                    <th>المؤلف</th>
+                  </tr>
+                </thead>
+                <tbody id="blogs-tbody"></tbody>
+              </table>
+            </div>
+            <div class="table-actions" style="margin-top: 15px;">
+              <button class="btn btn-primary" id="showAddBlogBtn">
+                <i class="fa-solid fa-plus"></i> إضافة مقالة جديدة
+              </button>
+            </div>
           </div>
+
+     
+          <div class="form-card hidden" id="blog-form-container">
+            <h4 id="blog-form-title">إضافة مقالة جديدة</h4>
+            <form id="blog-form">
+              <input type="hidden" id="blog-id" />
+              <div class="form-group">
+                <label for="blog-title">العنوان <span class="required">*</span></label>
+                <input type="text" id="blog-title" required placeholder="عنوان المقالة" />
+              </div>
+              <div class="form-group">
+                <label for="blog-category">التصنيف <span class="required">*</span></label>
+                <select id="blog-category" required></select>
+              </div>
+              <div class="form-group">
+                <label for="blog-content"> نص المقالة</label>
+                <textarea id="blog-content" rows="4" placeholder="اكتب نص المقالة هنا..."></textarea>
+              </div>
+              <div class="form-group">
+                <label for="blog-image"> الصورة</label>
+                <input type="text" id="blog-image" placeholder="https://example.com/image.jpg" />
+              </div>
+              <div class="form-buttons">
+                <button type="submit" class="btn btn-success" id="blog-submit-btn">حفظ</button>
+                <button type="button" class="btn btn-secondary" id="blog-cancel-btn">إلغاء</button>
+              </div>
+            </form>
+          </div>
+
+ 
+          <div class="card" style="margin-top: 30px;">
+            <h3>التصنيفات الحالية</h3>
+            <div class="table-responsive">
+              <table class="data-table" id="categories-table">
+                <thead>
+                  <tr>
+                    <th>المعرف</th>
+                    <th>التصنيف</th>
+                  </tr>
+                </thead>
+                <tbody id="categories-tbody"></tbody>
+              </table>
+            </div>
+            <div class="table-actions" style="margin-top: 15px;">
+              <button class="btn btn-primary" id="showAddCategoryBtn">
+                <i class="fa-solid fa-plus"></i> إضافة تصنيف جديد
+              </button>
+            </div>
+          </div>
+
+          <div class="form-card hidden" id="category-form-container">
+            <h4 id="category-form-title">إضافة تصنيف جديد</h4>
+            <form id="category-form">
+              <input type="hidden" id="category-id" />
+              <div class="form-group">
+                <label for="category-name">التصنيف <span class="required">*</span></label>
+                <input type="text" id="category-name" required placeholder="مثال: تقنية" />
+              </div>
+              <div class="form-buttons">
+                <button type="submit" class="btn btn-success" id="category-submit-btn">حفظ</button>
+                <button type="button" class="btn btn-secondary" id="category-cancel-btn">إلغاء</button>
+              </div>
+            </form>
+          </div>
+
         </div>
       </main>
     </div>
 
+  
     <script src="../assets/js/dashboard/sidebar.js"></script>
+    <script src="../assets/js/blogDashboard.js"></script>
   </body>
 </html>
