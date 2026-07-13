@@ -104,22 +104,32 @@
       </section>
 
       <!-- comments -->
+<!-- comments -->
 
       <section class="details-comments">
+        <!-- حاوية جديدة لعرض التعليقات الموجودة مسبقاً لهذا المشروع -->
+        <h2>التعليقات</h2>
+        <div id="commentsContainer" style="margin-bottom: 25px; display: flex; flex-direction: column; gap: 15px;">
+          <p style="color: #64748b; font-style: italic;">جاري تحميل التعليقات...</p>
+        </div>
+
         <h2>أضف تعليقاً</h2>
 
         <form class="comment-form">
-          <input type="text" placeholder="الاسم" class="comment-input" />
+          <input type="text" placeholder="الاسم" class="comment-input" id="commentUsername" required />
 
           <input
             type="email"
             placeholder="البريد الإلكتروني"
             class="comment-input"
+            id="commentEmail"
           />
 
           <textarea
             class="comment-textarea"
             placeholder="اكتب تعليقك هنا..."
+            id="commentContent"
+            required
           ></textarea>
 
           <button type="submit" class="comment-btn">إرسال التعليق</button>

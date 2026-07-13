@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const backendMessagesUrl = "http://orbitvolunteers.atwebpages.com/messages";
-  const proxyMessagesUrl = `https://corsproxy.io/?${encodeURIComponent(backendMessagesUrl)}`;
+  const proxyMessagesUrl = `https://corsproxy.io/?${encodeURIComponent(backendRegUrl)}`;
 
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();

@@ -7,27 +7,14 @@
     <link rel="stylesheet" href="../assets/css/dashboard.css" />
     <link rel="stylesheet" href="../assets/css/home.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/blog.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/blog.css" /> -->
     <link rel="stylesheet" href="../assets/css/login.css" />
+    <link rel="stylesheet" href="../Dashboard/teams.css" />
+  
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
     <div class="dashboard-container">
@@ -38,14 +25,73 @@
           <div class="page-header">
             <h2>إدارة الفرق</h2>
           </div>
+        
           <div class="card">
-            <p>هذه صفحة مستقلة تماماً لـ <strong>الفرق</strong>.</p>
+            <h3>الفرق الحالية</h3>
+            <div class="table-responsive">
+              <table class="teams-table">
+                <thead>
+                  <tr>
+                    <th>معرف الفريق</th>
+                    <th>اسم الفريق</th>
+                    <th>(Slug)</th>
+                    <th>الوصف</th>
+                    <th>(ID) قائد الفريق</th>
+                    <th>إجراءات</th>
+                  </tr>
+                </thead>
+                <tbody id="teams-tbody">
+                  </tbody>
+              </table>
+            </div>
           </div>
+
+          <div class="actions-section">
+            <button id="show-add-form-btn" class="btn btn-primary">
+              <i class="fa-solid fa-plus"></i> إضافة فريق جديد
+            </button>
+
+            <div id="form-container" class="card team-form-card hidden">
+              <h3 id="form-title">إضافة فريق جديد</h3>
+              <form id="team-form">
+                <input type="hidden" id="team-id" />
+              
+                <div class="form-group">
+                  <label for="team-name">اسم الفريق <span class="required">*</span></label>
+                  <input type="text" id="team-name" required placeholder="مثال: فريق تطوير الواجهات" />
+                </div>
+
+                <div class="form-hidden-row">
+                  <div class="form-group">
+                    <label for="team-slug">(Slug) <span class="required">*</span></label>
+                    <input type="text" id="team-slug" required placeholder="مثال: frontend-team" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="team-leader">معرّف قائد الفريق (User ID)</label>
+                    <input type="number" id="team-leader" placeholder="مثال: 1" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="team-description">الوصف</label>
+                  <textarea id="team-description" rows="4" placeholder="اكتب وصفاً مختصراً عن مهام الفريق..."></textarea>
+                </div>
+
+                <div class="form-buttons">
+                  <button type="submit" class="btn btn-success" id="submit-btn">حفظ</button>
+                  <button type="button" class="btn btn-secondary" id="cancel-btn">إلغاء</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
         </div>
       </main>
     </div>
 
-    <script src="../assets/js/dashboard/sidebar.js"></script>
-
+    <script src="../assets/js/sidebar.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+    <script src="../Dashboard/teams.js"></script>
   </body>
 </html>

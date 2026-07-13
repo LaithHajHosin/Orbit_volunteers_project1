@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/contactUs.css">
+
+   <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+</head>
+<body>
+    <main>
+      <header>
+        <main-navbar></main-navbar>
+      </header>
+    <div class="contact-page"> 
+        <form method="post">
+            <h3>تواصل معنا</h3>
+            <div class="input-contact">
+            <label class="contact">الاسم :</label>
+            <input type="text" name="name"  placeholder="اسم المستخدم" required>
+            
+           
+            <label class="contact">البريد الالكتروني :</label>
+            <input type="email" name="email"  placeholder="بريدك الالكتروني" required>
+            
+            <label class="contact">رقم الهاتف :</label>
+            <input type="" name="phone" placeholder="رقم هاتفك" required>
+            
+            <label class="contact">العنوان :</label>
+            <input type="text" name="address" placeholder="البلد,المدينة">
+            </div>
+            <div class="pcontact">
+            <label class="contact">رسالتك لنا :</label>
+            <textarea name="message"  cols="50" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn">إرسال</button>      
+        </form>
+      
+    </div>
+   
+       
+   <main-footer></main-footer>
+    </main>   
+      <script src="./assets/js/main.js"></script>
+      <script src="./assets/js/contactUs.js"></script>
+      
+</body>
+</html>

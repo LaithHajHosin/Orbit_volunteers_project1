@@ -254,3 +254,34 @@ nav.fcb {
   margin-right: 0.3rem;
   color: var(--purple-6);
 }
+
+.filters-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  background: var(--purple-1);
+  border: 2px solid var(--purple-3);
+  padding: 8px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--purple-8);
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  background: var(--purple-2);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: var(--purple-8);
+  color: white;
+  border-color: var(--purple-8);
+}

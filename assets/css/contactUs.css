@@ -5,15 +5,6 @@
  
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #D7B9FF;
-    background-size: cover;
-    background-position: center;
-}
 .contact-page{
     flex: 100%;
     direction: rtl;
@@ -22,13 +13,19 @@ body{
     backdrop-filter: blur(20px);
     color: black;
     padding: 20px 20px 30px 50px;
+     background-image: url(../images/test5.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contact-page h3{
+    position: relative;
     font-size: 36px;
     text-align: right;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-right: 20px;
-    color: var(--purple-10);
+    color: #fff;
     
 }
 .contact-page .input-contact{
@@ -51,7 +48,7 @@ body{
     padding: 20px 20px 20px 0px;    
  }
  .input-contact .contact{
-     color: #2a004f;
+     color: #fff;
      font-size: 20px ;
      margin-right: 20px;
      
@@ -89,6 +86,6 @@ body{
     top: 35%;
    }
    .pcontact .contact{
-      color: #2a004f;
+      color: #fff;
      font-size: 20px ;
    }
