@@ -171,3 +171,327 @@
     margin-right: 70px;
   }
 }
+
+
+/* users */
+.userTable {
+  width: min(100%, 1100px);
+  margin: 40px auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.08),
+    0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+
+.userTable thead {
+ 
+  background: linear-gradient(135deg, #6c63ff, #7f56d9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+  padding:0 10px
+}
+  .userTable thead tr{
+  width: 100%;
+   display: flex;
+  justify-content: space-between;
+}
+.userTable thead tr {
+  display: flex;
+  justify-content: space-between;
+   width: 100%;
+   transition: all .25s ease;
+    padding:20px;
+}
+.userTable thead  tr th{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* .userTable thead th:first-child {
+  border-top-left-radius: 18px;
+}
+
+.userTable thead th:last-child {
+  border-top-right-radius: 18px;
+} */
+
+
+.userTable tbody tr {
+  transition: all .25s ease;
+    padding:0 10px;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+ 
+}
+.userTable tbody tr td{
+   width: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+  font-size: 15px;
+  text-align: center;
+  color: #444;
+  border-bottom: 1px solid #ececf3;
+}
+
+.userTable tbody tr:nth-child(even) {
+  background: #fafaff;
+}
+
+.userTable tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+.userTable tbody tr:hover {
+  background: #f1efff;
+  transform: scale(1.005);
+}
+
+
+
+.userTable tbody td:first-child {
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+
+.userTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.action-btns{
+ display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+.userTable .btn-edit,
+.userTable .btn-delete {
+  border: none;
+  min-width: 90px;
+  padding: 9px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.userTable .btn-edit {
+  background: linear-gradient(135deg, #6c63ff, #7f56d9);
+  color: white;
+}
+
+.userTable .btn-edit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(108, 99, 255, .35);
+}
+
+.userTable .btn-delete {
+  background: linear-gradient(135deg, #ff5b6a, #ff7d53);
+  color: white;
+}
+
+.userTable .btn-delete:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 91, 106, .35);
+} 
+
+
+/* responsive */
+@media (max-width: 900px) {
+
+  .userTable {
+    width: 95%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .userTable th,
+  .userTable td {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+ 
+  
+
+}
+
+/* edit form */
+.overlay {
+    position: fixed;
+    inset: 0;                
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.edit-card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+    background: linear-gradient(135deg, #6c63ff, #7f56d9);
+
+  border-radius: 10px;
+  width: 40%;
+  gap: 10px;
+   color:white;
+   z-index: 2;
+   
+}
+.edit-inputs{
+  display: flex;
+  flex-direction: column;
+  
+}
+.edit-inputs .field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+ 
+}
+.edit-inputs .field input{
+  border-radius: 5px ;
+  border: none;
+  padding: 5px;
+}
+.button-row{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  
+}
+.button-row button{
+  width: 30%;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.button-row button:first-child{
+  background-color: var(--purple-9);
+  
+}
+.button-row button:first-child:hover{
+  background-color: var(--purple-10);
+}
+.button-row button:last-child{
+  background-color: rgb(249, 32, 32);
+}
+.button-row button:last-child:hover{
+  background-color: rgb(186, 43, 43);
+}
+.hidden{
+  display: none;
+}
+.active{
+  display: block;
+}
+/*  الحذف  */
+.delete-card{
+ 
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+ background-color: rgb(218, 82, 82);
+   border-radius: 10px;
+  width: 40%;
+  gap: 10px;
+   color:white;
+   z-index: 2;
+   
+
+}
+.buttons-row{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+
+}
+.btn{
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+.btn:last-child{
+  background-color: #ff5b6a;
+}
+.btn:last-child:hover{
+  background-color: rgb(194, 86, 86);
+}
+.btn:first-child{
+  background-color: #2980b9;
+}
+.btn:first-child:hover{
+  background-color: blue;
+}
+
+/* filters */
+.filters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px 0 32px;
+  padding: 14px 18px;
+  border-radius: 18px;
+}
+.filters select{
+  appearance: none;
+  background: #fff;
+  border: 1px solid rgba(108, 99, 255, 0.25);
+  border-radius: 14px;
+  color: #333;
+  padding: 12px ;
+  min-width: 170px;
+  font-size: 0.96rem;
+  font-weight: 600;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+.filterContainer{
+  display: flex;
+  align-items: center;
+  gap: 10px ;
+}
+.filters select:hover,
+.filters select:focus {
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.12);
+  transform: translateY(-1px);
+  outline: none;
+}
+.filters select option {
+  background: #fff;
+  color: #333;
+}
+
+

@@ -34,14 +34,49 @@
       <div id="sidebar-container"></div>
 
       <main class="main-content">
-        <div class="content-body">
-          <div class="page-header">
-            <h2>سجلات النظام</h2>
+        <h1 style="text-align: center; margin-top: 100px; color: white;">إدارة المستخدمين</h1>
+         <div class="filters">
+          <div class="filterContainer">
+          <p style="color: white;">فلترة حسب الدور:</p>
+          <select  id="roleFilter" onchange="filterByRole(this.value)">
+             <option value="all">all</option>
+            <option value="volunteer">volunteer</option>
+            <option value="admin">admin</option>
+          </select>
           </div>
-          <div class="card">
-            <p>هذه صفحة مستقلة تماماً لـ <strong>سجلات النظام</strong>.</p>
+          <div class="filterContainer">
+           <p style="color: white;">فلترة حسب الحالة:</p>
+           <select  id="statusFilter" onchange="filterByStatus(this.value)">
+             <option value="all">all</option>
+             <option value="active">active</option>
+            <option value="inactive">inactive</option>
+            <option value="suspended">suspended</option>
+            <option value="pending">pending</option>
+          </select>
           </div>
-        </div>
+
+         </div>
+         <div style="margin-right: 40px; ">
+          <button style="cursor:pointer" id="nextBtn">  ▶</button>
+          <button style="cursor:pointer" id="prevBtn">  ◀</button>
+
+         </div>
+        <table class="userTable">
+        <thead class="headTable">
+          <tr>
+            <th>#</th>
+            <th>الاسم</th>
+            <th>الإيميل</th>
+            <th>الدور</th>
+            <th>الحالة</th>
+            <th>الإجراءات</th>
+          </tr>
+        </thead>
+         <tbody id="bodyTable">
+        </tbody>
+       </table>
+       <div id="editForm"></div>
+       <div id="deleteModel"></div>
       </main>
     </div>
 
