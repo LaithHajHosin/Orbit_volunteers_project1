@@ -28,17 +28,22 @@ document.addEventListener("DOMContentLoaded", () => {
           try { currentRole = JSON.parse(oldDataString).role || "user"; } catch(e){}
         }
 
-        // إذا جاء الـ role من السيرفر بشكل كائن (كما في برمجيات Headless CMS) أو نص نلتقطه، وإلا نحتفظ بالقديم
+        // إذا جاء الـ role من السيرفر بشكل كائن أو نص نلتقطه، وإلا نحتفظ بالقديم
         const updatedRole = user.role?.name || user.role || currentRole;
         
         user.role = updatedRole; // نضمن تثبيت الـ role الصحيح
         localStorage.setItem("userData", JSON.stringify(user));
+
+        // تحديث الناف بار فوراً إذا تغير الـ Role أو تم تحديث البيانات لتجنب مشكلة الـ Race Condition
+        const navbarEl = document.querySelector("main-navbar");
+        if (navbarEl && typeof navbarEl.connectedCallback === "function") {
+          navbarEl.connectedCallback();
+        }
       })
       .catch((err) => {
         if (err.message === "Session expired") {
           console.warn("جلسة الدخول منتهية، سيتم تسجيل الخروج.");
           localStorage.clear();
-          // التوجيه لصفحة الـ Guest الرئيسية
           window.location.href = "./index.html"; 
         } else {
           console.error("فشل الفحص الدوري بسبب الشبكة أو الـ CORS:", err);
@@ -94,7 +99,7 @@ class MainNavbar extends HTMLElement {
         </div>
         <ul class="home-menu fca">
           ${centerMenuLinks}
-          <li><a href="./contact us.html">تواصل معنا</a></li>
+          <li><a href="./contactUs.html">تواصل معنا</a></li>
           <li><a href="#our-team">فريقنا</a></li>
           <li><a href="#about-us">من نحن</a></li>
           <li><a href="#articles-section">المقالات</a></li>
@@ -120,8 +125,10 @@ class MainNavbar extends HTMLElement {
           <li><a href="#articles-section">المقالات</a></li>
           <li><a href="#about-us">من نحن</a></li>
           <li><a href="#our-team">فريقنا</a></li>
-          <li><a href="./contact us.html">تواصل معنا</a></li>
+          <li><a href="./contactUs.html">تواصل معنا</a></li>
+          
           ${centerMenuLinks}
+      
           <li>
             <div class="home-actions">
               ${mobileActions}
@@ -135,16 +142,21 @@ class MainNavbar extends HTMLElement {
     const hamburger = this.querySelector("#hamburger");
     const sideMenu = this.querySelector("#sideMenu");
     if (hamburger && sideMenu) {
-      hamburger.addEventListener("click", () => {
+      // إزالة المستمعات القديمة أولاً لمنع تكرار الأحداث عند إعادة البناء الديناميكي
+      const newHamburger = hamburger.cloneNode(true);
+      hamburger.parentNode.replaceChild(newHamburger, hamburger);
+
+      newHamburger.addEventListener("click", () => {
         sideMenu.classList.toggle("open");
-        hamburger.classList.toggle("open");
+        newHamburger.classList.toggle("open");
       });
     }
 
     const closeMobileMenu = () => {
-      if (sideMenu && hamburger) {
+      const activeHamburger = this.querySelector("#hamburger");
+      if (sideMenu && activeHamburger) {
         sideMenu.classList.remove("open");
-        hamburger.classList.remove("open");
+        activeHamburger.classList.remove("open");
       }
     };
 
@@ -154,7 +166,6 @@ class MainNavbar extends HTMLElement {
     
     const handleLogout = () => {
       localStorage.clear();
-      // التوجيه فوراً للرئيسية ليعود كزائر غيست
       window.location.href = "./index.html"; 
     };
 
@@ -222,7 +233,7 @@ class MainFooter extends HTMLElement {
                 <span>0000000000</span>
               </div>
             </div>
-            <a href="./contact us.html">
+            <a href="./contactUs.html">
             <div class="footer-cta-item">
               <i class="cta-text-icon far fa-envelope-open"></i>
               <div class="cta-text">
@@ -257,7 +268,7 @@ class MainFooter extends HTMLElement {
                 <li><a href="./allBlogs.html">المقالات</a></li>
                 <li><a href="#about-us">من نحن</a></li>
                  <li><a href="#our-team">فريقنا</a></li>
-                <li><a href="./contact us.html">تواصل معنا</a></li>
+                <li><a href="./contactUs.html">تواصل معنا</a></li>
                 <li><a href="#">آخر الاخبار</a></li>
               </ul>
             </div>
