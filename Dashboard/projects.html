@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/blog.css" />
     <link rel="stylesheet" href="../assets/css/login.css" />
+    <link rel="stylesheet" href="../assets/css/blogDashboard.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,13 +39,94 @@
           <div class="page-header">
             <h2>إدارة المشاريع</h2>
           </div>
+
           <div class="card">
-            <p>هذه صفحة مستقلة تماماً لـ <strong>المشاريع</strong>.</p>
+            <h3>المشاريع</h3>
+            <div class="table-responsive">
+              <table class="data-table" id="projects-table">
+                <thead>
+                  <tr>
+                    <th>المعرف</th>
+                    <th>العنوان</th>
+                    <th>الحالة</th>
+                    <th>التصنيف</th>
+                    <th>الفريق</th>
+                    <th>تاريخ النشر</th>
+                  </tr>
+                </thead>
+                <tbody id="projects-tbody"></tbody>
+              </table>
+            </div>
+            <div class="table-actions" style="margin-top: 15px;">
+              <button class="btn btn-primary" id="showAddProjectBtn">
+                <i class="fa-solid fa-plus"></i> إضافة مشروع جديد
+              </button>
+              <button class="btn btn-primary" id="showAddCategoryBtn">
+                <i class="fa-solid fa-plus"></i> إضافة تصنيف مشروع جديد
+              </button>
+            </div>
           </div>
+
+          <div class="form-card hidden" id="project-form-container">
+            <h4 id="project-form-title">إضافة مشروع جديد</h4>
+            <form id="project-form">
+              <input type="hidden" id="project-id" />
+              <div class="form-group">
+                <label for="project-title">العنوان <span class="required">*</span></label>
+                <input type="text" id="project-title" required placeholder="عنوان المشروع" />
+              </div>
+              <div class="form-group">
+                <label for="project-status">الحالة <span class="required">*</span></label>
+                <select id="project-status" required>
+                  <option value="need_volunteers">يحتاج متطوعين</option>
+                  <option value="in_progress">قيد التنفيذ</option>
+                  <option value="completed">منجز</option>
+                  <option value="on_hold">معلق</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="project-category">التصنيف <span class="required">*</span></label>
+                <select id="project-category" required></select>
+              </div>
+              <div class="form-group">
+                <label for="project-team">معرف الفريق</label>
+                <input type="number" id="project-team" placeholder="معرف الفريق (اختياري)" />
+              </div>
+              <div class="form-group">
+                <label for="project-description">الوصف</label>
+                <textarea id="project-description" rows="4" placeholder="اكتب وصف المشروع هنا..."></textarea>
+              </div>
+              <div class="form-group">
+                <label for="project-image">الصورة</label>
+                <input type="text" id="project-image" placeholder="https://example.com/image.jpg" />
+              </div>
+              <div class="form-buttons">
+                <button type="submit" class="btn btn-success" id="project-submit-btn">حفظ</button>
+                <button type="button" class="btn btn-secondary" id="project-cancel-btn">إلغاء</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="form-card hidden" id="category-form-container">
+            <h4 id="category-form-title">إضافة تصنيف مشروع جديد</h4>
+            <form id="category-form">
+              <input type="hidden" id="category-id" />
+              <div class="form-group">
+                <label for="category-name">التصنيف <span class="required">*</span></label>
+                <input type="text" id="category-name" required placeholder="مثال: تقنية" />
+              </div>
+              <div class="form-buttons">
+                <button type="submit" class="btn btn-success" id="category-submit-btn">حفظ</button>
+                <button type="button" class="btn btn-secondary" id="category-cancel-btn">إلغاء</button>
+              </div>
+            </form>
+          </div>
+
         </div>
       </main>
     </div>
 
     <script src="../assets/js/dashboard/sidebar.js"></script>
+    <script src="../assets/js/dashboard/projectDashboard.js"></script>
   </body>
 </html>

@@ -2,13 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const BASE_URL = "http://orbitvolunteers.atwebpages.com";
   const PROXY_URL = "https://corsproxy.io/?url=";
 
-  let editingBlogId = null;
+  let editingProjectId = null;
   let editingCategoryId = null;
-
-  function fetchBlogs() {
-    const url = `${BASE_URL}/blogs`;
+  function fetchProjects() {
+    const url = `${BASE_URL}/projects`;
     const proxyUrl = PROXY_URL + encodeURIComponent(url);
-
     fetch(proxyUrl, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
@@ -18,39 +16,45 @@ document.addEventListener("DOMContentLoaded", () => {
         return res.json();
       })
       .then((data) => {
-        const blogs = data.data || [];
-        renderBlogs(blogs);
+        const projects = data.data || [];
+        renderProjects(projects);
       })
       .catch((err) => {
-        console.error("خطأ في جلب المقالات:", err);
-        document.querySelector("#blogs-tbody").innerHTML =
-          '<tr><td colspan="5" style="color: var(--purple-3);">حدث خطأ في تحميل المقالات</td></tr>';
+        console.error("خطأ في جلب المشاريع:", err);
+        document.querySelector("#projects-tbody").innerHTML =
+          '<tr><td colspan="6" style="color: var(--purple-3); text-align: center;">حدث خطأ في تحميل المشاريع</td></tr>';
       });
   }
-
-  function renderBlogs(blogs) {
-    const tbody = document.querySelector("#blogs-tbody");
+  function renderProjects(projects) {
+    const tbody = document.querySelector("#projects-tbody");
     tbody.innerHTML = "";
-    if (blogs.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="5" style="color: var(--purple-3);">لا توجد مقالات</td></tr>';
+    if (projects.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" style="color: var(--purple-3); text-align: center;">لا توجد مشاريع مضافة</td></tr>';
       return;
     }
-    blogs.forEach((blog) => {
-      const authorName = blog.author_username || "غير معروف";
+    projects.forEach((project) => {
+      // ترجمة الحالة إلى العربية
+      const statusMap = {
+        "need_volunteers": "يحتاج متطوعين",
+        "in_progress": "قيد التنفيذ",
+        "completed": "منجز",
+        "on_hold": "معلق"
+      };
+      const statusAr = statusMap[project.status] || project.status || "غير محدد";
       tbody.innerHTML += `
         <tr>
-          <td>${blog.id}</td>
-          <td>${blog.title}</td>
-          <td>${blog.category_name || "غير مصنف"}</td>
-          <td>${blog.published_at || ""}</td>
-          <td>${authorName}</td>
+          <td>${project.id}</td>
+          <td><b>${project.title}</b></td>
+          <td><span class="badge">${statusAr}</span></td>
+          <td>${project.category_name || "غير مصنف"}</td>
+          <td>${project.team_name || "-"}</td>
+          <td>${project.published_at || "-"}</td>
         </tr>
       `;
     });
   }
-
   function fetchCategories() {
-    const url = `${BASE_URL}/blog-categories`;
+    const url = `${BASE_URL}/project-categories`;
     const proxyUrl = PROXY_URL + encodeURIComponent(url);
 
     fetch(proxyUrl, {
@@ -66,31 +70,36 @@ document.addEventListener("DOMContentLoaded", () => {
         populateCategorySelect(categories);
       })
       .catch((err) => {
-        console.error("خطأ في جلب التصنيفات:", err);
+        console.error("خطأ في جلب تصنيفات المشاريع:", err);
+        // بيانات وهمية في حال فشل الجلب
+        populateCategorySelect([
+          { id: 1, name: "تقنية" },
+          { id: 2, name: "اجتماعي" },
+          { id: 3, name: "تعليمي" }
+        ]);
       });
   }
-
-
   function populateCategorySelect(categories) {
-    const select = document.querySelector("#blog-category");
-    select.innerHTML = '<option value="">اختر تصنيف</option>';
+    const select = document.querySelector("#project-category");
+    if (!select) return;
+    select.innerHTML = '<option value="">اختر تصنيف...</option>';
     categories.forEach((cat) => {
       select.innerHTML += `<option value="${cat.id}">${cat.name}</option>`;
     });
   }
 
-  document.querySelector("#showAddBlogBtn").addEventListener("click", function() {
-    const container = document.querySelector("#blog-form-container");
+  document.querySelector("#showAddProjectBtn").addEventListener("click", function() {
+    const container = document.querySelector("#project-form-container");
     container.classList.toggle("hidden");
     if (!container.classList.contains("hidden")) {
-      resetBlogForm();
+      resetProjectForm();
       container.scrollIntoView({ behavior: "smooth" });
     }
   });
 
-  document.querySelector("#blog-cancel-btn").addEventListener("click", function() {
-    resetBlogForm();
-    document.querySelector("#blog-form-container").classList.add("hidden");
+  document.querySelector("#project-cancel-btn").addEventListener("click", function() {
+    resetProjectForm();
+    document.querySelector("#project-form-container").classList.add("hidden");
   });
 
   document.querySelector("#showAddCategoryBtn").addEventListener("click", function() {
@@ -107,25 +116,26 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#category-form-container").classList.add("hidden");
   });
 
-  document.querySelector("#blog-form").addEventListener("submit", function(e) {
+  document.querySelector("#project-form").addEventListener("submit", function(e) {
     e.preventDefault();
-    const isEdit = editingBlogId !== null;
+    const isEdit = editingProjectId !== null;
     const payload = {
-      title: document.querySelector("#blog-title").value.trim(),
-      category_id: parseInt(document.querySelector("#blog-category").value) || null,
-      description1: document.querySelector("#blog-content").value.trim() || null,
-      image1_url: document.querySelector("#blog-image").value.trim() || null,
+      title: document.querySelector("#project-title").value.trim(),
+      status: document.querySelector("#project-status").value,
+      category_id: parseInt(document.querySelector("#project-category").value) || null,
+      team_id: parseInt(document.querySelector("#project-team").value) || null,
+      description1: document.querySelector("#project-description").value.trim() || null,
+      image1_url: document.querySelector("#project-image").value.trim() || null,
     };
 
-    const url = isEdit ? `${BASE_URL}/blogs/${editingBlogId}` : `${BASE_URL}/blogs`;
+    const url = isEdit ? `${BASE_URL}/projects/${editingProjectId}` : `${BASE_URL}/projects`;
     const method = isEdit ? "PUT" : "POST";
     const token = localStorage.getItem("userToken");
-
     fetch(PROXY_URL + encodeURIComponent(url), {
       method: method,
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+        "Authorization": `Bearer ${token}`,
       },
       body: JSON.stringify(payload),
     })
@@ -138,10 +148,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return res.json();
       })
       .then(() => {
-        alert(isEdit ? "تم تحديث المقالة بنجاح" : "تم إضافة المقالة بنجاح");
-        resetBlogForm();
-        document.querySelector("#blog-form-container").classList.add("hidden");
-        fetchBlogs();
+        alert(isEdit ? "تم تحديث المشروع بنجاح" : "تم إضافة المشروع بنجاح");
+        resetProjectForm();
+        document.querySelector("#project-form-container").classList.add("hidden");
+        fetchProjects();
       })
       .catch((err) => {
         console.error(err);
@@ -156,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: document.querySelector("#category-name").value.trim(),
     };
 
-    const url = isEdit ? `${BASE_URL}/blog-categories/${editingCategoryId}` : `${BASE_URL}/blog-categories`;
+    const url = isEdit ? `${BASE_URL}/project-categories/${editingCategoryId}` : `${BASE_URL}/project-categories`;
     const method = isEdit ? "PUT" : "POST";
     const token = localStorage.getItem("userToken");
 
@@ -164,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       method: method,
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+        "Authorization": `Bearer ${token}`,
       },
       body: JSON.stringify(payload),
     })
@@ -181,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
         resetCategoryForm();
         document.querySelector("#category-form-container").classList.add("hidden");
         fetchCategories();
-        fetchBlogs();
+        fetchProjects();
       })
       .catch((err) => {
         console.error(err);
@@ -189,20 +199,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
-  function resetBlogForm() {
-    editingBlogId = null;
-    document.querySelector("#blog-form").reset();
-    document.querySelector("#blog-form-title").textContent = "إضافة مقالة جديدة";
-    document.querySelector("#blog-submit-btn").textContent = "حفظ";
+  function resetProjectForm() {
+    editingProjectId = null;
+    document.querySelector("#project-form").reset();
+    document.querySelector("#project-form-title").textContent = "إضافة مشروع جديد";
+    document.querySelector("#project-submit-btn").textContent = "حفظ";
   }
 
   function resetCategoryForm() {
     editingCategoryId = null;
     document.querySelector("#category-form").reset();
-    document.querySelector("#category-form-title").textContent = "إضافة تصنيف جديد";
+    document.querySelector("#category-form-title").textContent = "إضافة تصنيف مشروع جديد";
     document.querySelector("#category-submit-btn").textContent = "حفظ";
   }
 
-  fetchBlogs();
+  fetchProjects();
   fetchCategories();
 });
