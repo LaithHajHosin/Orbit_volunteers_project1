@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return localStorage.getItem("userToken") || '';
   }
 
-  // 1. جلب وعرض الفرق من الـ API
+
   function loadTeams() {
     const tbody = document.querySelector("#teams-tbody");
     const targetUrl = `${BASE_URL}/teams`;
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .then((response) => {
         tbody.innerHTML = "";
-        // التأكد من استخراج المصفوفة بشكل صحيح سواء كانت داخل response.data أو مباشرة
+
         const teams = response.data || response || [];
        
         if (!Array.isArray(teams) || teams.length === 0) {
@@ -78,14 +78,12 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  // 2. معالجة إرسال النموذج (إنشاء/تعديل الفريق + ربط الأعضاء)
   document.querySelector("#team-form").addEventListener("submit", function(e) {
     e.preventDefault();
     const token = getAuthToken();
     const teamId = document.querySelector("#team-id").value;
     const isEdit = teamId !== "";
 
-    // تحويل نص المدخلات إلى مصفوفة أرقام
     const membersInput = document.querySelector("#team-members").value;
     const membersArray = membersInput
       ? membersInput.split(",").map(id => parseInt(id.trim())).filter(id => !isNaN(id))
@@ -116,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return res.json();
       })
       .then((result) => {
-        // استخراج معرّف الفريق الناتج
+    
         const finalTeamId = isEdit ? teamId : (result.id || (result.data && result.data.id));
 
         // إذا تم التعديل أو تم إضافة أعضاء جدد
@@ -154,7 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
-  // 3. تعبئة النموذج لتعديله
   function populateFormForEdit(id, name, slug, leaderId, description, members) {
     document.querySelector("#team-id").value = id;
     document.querySelector("#team-name").value = name;
@@ -218,6 +215,5 @@ document.addEventListener("DOMContentLoaded", () => {
     resetForm();
   });
 
-  // التنفيذ عند التشغيل
   loadTeams();
 });
