@@ -26,7 +26,7 @@
 }
 
 .teams-table tbody tr:hover {
-    background-color: #f1f3f5;
+    background-color: #6c757d;
 }
 
 .btn {
@@ -39,6 +39,7 @@
     display: inline-flex;
     align-items: center;
     gap: 5px;
+    
 }
 
 .btn-sm {
@@ -49,15 +50,19 @@
 .btn-success {
     background-color: #1f0e38;
     color: white;
+    width: 60px;
+    height: 30px;
 }
 
 .btn-success:hover {
     background-color: #6c757d;
+    
 }
 
 .btn-primary {
     background-color: #1f0e38;
     color: white;
+    
 }
 
 .btn-primary:hover {
@@ -67,6 +72,9 @@
 .btn-secondary {
     background-color: #6c757d;
     color: white;
+    width: 60px;
+    height: 30px;
+    
 }
 
 .actions-buttons-container {
@@ -77,12 +85,12 @@
 
 .btn-edit {
     background-color: #0d6efd;
-    color: white !important;
+    color: #6c757d ;
 }
 
 .btn-delete {
     background-color: #dc3545;
-    color: white;
+    color: #6c757d;
 }
 
 .btn:hover {
